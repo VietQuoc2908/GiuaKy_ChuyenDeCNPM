@@ -45,6 +45,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,17 +58,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Views\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\ChuyenDi.cs" />
-    <Compile Include="Models\GioKhoiHanh.cs" />
-    <Compile Include="Models\KhachHang.cs" />
-    <Compile Include="Models\Ve.cs" />
-    <Compile Include="Models\Xe.cs" />
+    <Compile Include="Models\DiaDiem.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HuongDanVien.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KhachHang.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhanVien.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhieuVe.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaiKhoan.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaiXe.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThongTinChuyenDi.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\XeKhach.cs">
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\XeKhachModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XeKhachModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\XeKhachModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\XeKhachModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XeKhachModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -78,6 +120,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EntityDeploy Include="Models\XeKhachModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>XeKhachModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\XeKhachModel.edmx.diagram">
+      <DependentUpon>XeKhachModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,6 +143,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\XeKhachModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>XeKhachModel.edmx</DependentUpon>
+      <LastGenOutput>XeKhachModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\XeKhachModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>XeKhachModel.edmx</DependentUpon>
+      <LastGenOutput>XeKhachModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

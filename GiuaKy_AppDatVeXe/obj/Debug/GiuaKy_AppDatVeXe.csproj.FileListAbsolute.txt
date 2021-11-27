@@ -1,0 +1,14 @@
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\bin\Debug\GiuaKy_AppDatVeXe.exe.config
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\bin\Debug\GiuaKy_AppDatVeXe.exe
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\bin\Debug\GiuaKy_AppDatVeXe.pdb
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\bin\Debug\EntityFramework.dll
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\bin\Debug\EntityFramework.SqlServer.dll
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\bin\Debug\EntityFramework.xml
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\bin\Debug\EntityFramework.SqlServer.xml
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.csproj.AssemblyReference.cache
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.Properties.Resources.resources
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.csproj.GenerateResource.cache
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.csproj.CoreCompileInputs.cache
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.csproj.CopyComplete
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.exe
+D:\HK1_2021_2022\ChuyenDeCongNghePhanMem_N4_T1\GiuaKy\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.pdb
