@@ -69,7 +69,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(556, 43);
+            this.textBox1.Location = new System.Drawing.Point(604, 43);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(230, 31);
             this.textBox1.TabIndex = 57;
@@ -78,7 +78,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Minion Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(482, 49);
+            this.label1.Location = new System.Drawing.Point(495, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 24);
             this.label1.TabIndex = 56;
@@ -95,7 +95,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Minion Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(92, 49);
+            this.label20.Location = new System.Drawing.Point(60, 49);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(108, 24);
             this.label20.TabIndex = 54;

@@ -363,3 +363,6 @@ Temporary Items
 InteropTests/NativeTests/out
 /src/System.Windows.Forms/src/comctl32.dll
 *.received.*
+project.properties
+*.properties
+project.properties
