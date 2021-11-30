@@ -14,11 +14,9 @@ namespace GiuaKy_AppDatVeXe.Models
     
     public partial class TaiKhoan
     {
-        public int stt { get; set; }
-        public string MaNV { get; set; }
-        public string TenNV { get; set; }
-        public string ChucVu { get; set; }
-        public string TenTK { get; set; }
-        public string MatKhau { get; set; }
+        public string tenDangNhap { get; set; }
+        public string matKhau { get; set; }
+        public int loaiTaiKhoan { get; set; }
+        public Nullable<int> soDienThoai { get; set; }
     }
 }

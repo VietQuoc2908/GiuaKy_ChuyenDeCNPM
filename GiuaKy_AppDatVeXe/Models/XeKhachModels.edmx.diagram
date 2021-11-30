@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aa6650b9d81140559794b5d361220bad" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.BenXe" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.ChuyenDi" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.DatVeXe" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.HanhKhach" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.HopDongNV" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.NhanVien" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.TaiKhoan" Width="1.5" PointX="5.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.ThoiGianHoatDong" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.ThongTinVeXe" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanVeXeKhachModel.Xe" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__HopDongNV__maBen__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__ThoiGianH__maBen__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__DatVeXe__maCD__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__ThongTinVe__maCD__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__DatVeXe__soDienT__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__HopDongNV__maNV__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__ThoiGianH__bienS__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanVeXeKhachModel.FK__ThongTinV__bienS__49C3F6B7" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

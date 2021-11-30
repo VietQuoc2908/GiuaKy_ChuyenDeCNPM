@@ -12,22 +12,22 @@ namespace GiuaKy_AppDatVeXe.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class NhanVien
+    public partial class BenXe
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public NhanVien()
+        public BenXe()
         {
             this.HopDongNVs = new HashSet<HopDongNV>();
+            this.ThoiGianHoatDongs = new HashSet<ThoiGianHoatDong>();
         }
     
-        public string maNV { get; set; }
-        public int CMND { get; set; }
-        public string hoTen { get; set; }
-        public string gioiTinh { get; set; }
+        public string maBen { get; set; }
+        public string tenBen { get; set; }
         public string diaChi { get; set; }
-        public string email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HopDongNV> HopDongNVs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ThoiGianHoatDong> ThoiGianHoatDongs { get; set; }
     }
 }

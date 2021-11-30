@@ -13,10 +13,10 @@ namespace GiuaKy_AppDatVeXe.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLyXeKhachEntities : DbContext
+    public partial class QuanLyBanVeXeKhachEntities : DbContext
     {
-        public QuanLyXeKhachEntities()
-            : base("name=QuanLyXeKhachEntities")
+        public QuanLyBanVeXeKhachEntities()
+            : base("name=QuanLyBanVeXeKhachEntities")
         {
         }
     
@@ -25,15 +25,16 @@ namespace GiuaKy_AppDatVeXe.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DiaDiem> DiaDiems { get; set; }
-        public virtual DbSet<HuongDanVien> HuongDanViens { get; set; }
-        public virtual DbSet<KhachHang> KhachHangs { get; set; }
+        public virtual DbSet<BenXe> BenXes { get; set; }
+        public virtual DbSet<ChuyenDi> ChuyenDis { get; set; }
+        public virtual DbSet<DatVeXe> DatVeXes { get; set; }
+        public virtual DbSet<HanhKhach> HanhKhaches { get; set; }
+        public virtual DbSet<HopDongNV> HopDongNVs { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
-        public virtual DbSet<PhieuVe> PhieuVes { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
-        public virtual DbSet<TaiXe> TaiXes { get; set; }
-        public virtual DbSet<ThongTinChuyenDi> ThongTinChuyenDis { get; set; }
-        public virtual DbSet<XeKhach> XeKhaches { get; set; }
+        public virtual DbSet<ThoiGianHoatDong> ThoiGianHoatDongs { get; set; }
+        public virtual DbSet<ThongTinVeXe> ThongTinVeXes { get; set; }
+        public virtual DbSet<Xe> Xes { get; set; }
     }
 }

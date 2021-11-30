@@ -12,15 +12,15 @@ namespace GiuaKy_AppDatVeXe.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class NhanVien
+    public partial class HanhKhach
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public NhanVien()
+        public HanhKhach()
         {
-            this.HopDongNVs = new HashSet<HopDongNV>();
+            this.DatVeXes = new HashSet<DatVeXe>();
         }
     
-        public string maNV { get; set; }
+        public int soDienThoai { get; set; }
         public int CMND { get; set; }
         public string hoTen { get; set; }
         public string gioiTinh { get; set; }
@@ -28,6 +28,6 @@ namespace GiuaKy_AppDatVeXe.Models
         public string email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HopDongNV> HopDongNVs { get; set; }
+        public virtual ICollection<DatVeXe> DatVeXes { get; set; }
     }
 }

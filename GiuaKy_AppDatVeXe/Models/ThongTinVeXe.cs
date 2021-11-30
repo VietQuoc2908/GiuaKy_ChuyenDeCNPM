@@ -12,14 +12,13 @@ namespace GiuaKy_AppDatVeXe.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class XeKhach
+    public partial class ThongTinVeXe
     {
-        public int stt { get; set; }
-        public string MaXe { get; set; }
-        public string MaTaiXe { get; set; }
-        public string MaHDV { get; set; }
+        public string bienSo { get; set; }
+        public int maCD { get; set; }
+        public Nullable<int> soLuongVe { get; set; }
     
-        public virtual NhanVien NhanVien { get; set; }
-        public virtual NhanVien NhanVien1 { get; set; }
+        public virtual ChuyenDi ChuyenDi { get; set; }
+        public virtual Xe Xe { get; set; }
     }
 }
