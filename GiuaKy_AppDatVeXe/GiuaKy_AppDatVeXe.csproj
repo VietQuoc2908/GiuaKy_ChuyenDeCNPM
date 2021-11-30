@@ -58,11 +58,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\Form1.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BanVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\BanVe.Designer.cs">
+      <DependentUpon>BanVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DoanhThu.Designer.cs">
+      <DependentUpon>DoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\InVe.Designer.cs">
+      <DependentUpon>InVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyXeKhach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\QuanLyXeKhach.Designer.cs">
+      <DependentUpon>QuanLyXeKhach.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\DiaDiem.cs">
       <DependentUpon>XeKhachModel.tt</DependentUpon>
@@ -113,13 +142,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Views\BanVe.resx">
+      <DependentUpon>BanVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DoanhThu.resx">
+      <DependentUpon>DoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InVe.resx">
+      <DependentUpon>InVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\QuanLyXeKhach.resx">
+      <DependentUpon>QuanLyXeKhach.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Models\XeKhachModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>XeKhachModel.Designer.cs</LastGenOutput>
@@ -155,6 +195,13 @@
       <DependentUpon>XeKhachModel.edmx</DependentUpon>
       <LastGenOutput>XeKhachModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\search.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\seat3.png" />
+    <None Include="Resources\seat2.png" />
+    <None Include="Resources\seat1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

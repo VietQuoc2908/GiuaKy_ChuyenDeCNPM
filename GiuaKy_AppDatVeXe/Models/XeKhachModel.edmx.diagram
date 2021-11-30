@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="adf80069394045bb9ba185ba47aeddd6" Name="Diagram1">
         <EntityTypeShape EntityType="QuanLyXeKhachModel.DiaDiem" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyXeKhachModel.HuongDanVien" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyXeKhachModel.HuongDanVien" Width="1.5" PointX="3.375" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyXeKhachModel.KhachHang" Width="1.5" PointX="3.75" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyXeKhachModel.NhanVien" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyXeKhachModel.PhieuVe" Width="1.5" PointX="6" PointY="5.875" IsExpanded="true" />
