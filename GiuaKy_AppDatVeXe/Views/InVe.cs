@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GiuaKy_AppDatVeXe
+namespace GiuaKy_AppDatVeXe.Views
 {
-    public partial class Form1 : Form
+    public partial class InVe : UserControl
     {
-        public Form1()
+        public InVe()
         {
             InitializeComponent();
         }
