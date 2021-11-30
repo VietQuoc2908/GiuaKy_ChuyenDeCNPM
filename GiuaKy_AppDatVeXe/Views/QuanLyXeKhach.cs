@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace GiuaKy_AppDatVeXe
 {
-    public partial class Form1 : Form
+    public partial class QuanLyXeKhach : Form
     {
-        public Form1()
+        public QuanLyXeKhach()
         {
             InitializeComponent();
         }
@@ -47,5 +47,5 @@ namespace GiuaKy_AppDatVeXe
             inVe.Dock = DockStyle.Fill;
             pnLoad.Controls.Add(inVe);
         }
-    } 
+    }
 }

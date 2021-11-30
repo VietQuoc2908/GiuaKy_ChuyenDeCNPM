@@ -30,3 +30,4 @@ C:\Users\Long\Downloads\Gk_CNPM\GiuaKy_ChuyenDeCNPM\GiuaKy_AppDatVeXe\obj\Debug\
 C:\Users\Long\Downloads\Gk_CNPM\GiuaKy_ChuyenDeCNPM\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.Views.KhachHang.resources
 C:\Users\Long\Downloads\Gk_CNPM\GiuaKy_ChuyenDeCNPM\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.Views.InVe.resources
 C:\Users\Long\Downloads\Gk_CNPM\GiuaKy_ChuyenDeCNPM\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.Views.DoanhThu.resources
+C:\Users\Long\Downloads\Gk_CNPM\GiuaKy_ChuyenDeCNPM\GiuaKy_AppDatVeXe\obj\Debug\GiuaKy_AppDatVeXe.QuanLyXeKhach.resources

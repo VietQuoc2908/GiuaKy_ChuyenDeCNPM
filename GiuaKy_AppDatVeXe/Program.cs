@@ -16,7 +16,7 @@ namespace GiuaKy_AppDatVeXe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new QuanLyXeKhach());
         }
     }
 }

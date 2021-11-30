@@ -1,6 +1,6 @@
 ﻿namespace GiuaKy_AppDatVeXe
 {
-    partial class Form1
+    partial class QuanLyXeKhach
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyXeKhach));
             this.btnBanVe = new System.Windows.Forms.Button();
             this.btnInVe = new System.Windows.Forms.Button();
             this.btnDoanhThu = new System.Windows.Forms.Button();
@@ -122,7 +122,7 @@
             this.pnLoad.Size = new System.Drawing.Size(1058, 652);
             this.pnLoad.TabIndex = 4;
             // 
-            // Form1
+            // QuanLyXeKhach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,7 +130,7 @@
             this.Controls.Add(this.pnLoad);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "QuanLyXeKhach";
             this.Text = "Quản Lý Xe Khách";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
