@@ -47,5 +47,15 @@ namespace GiuaKy_AppDatVeXe
             inVe.Dock = DockStyle.Fill;
             pnLoad.Controls.Add(inVe);
         }
+
+        private void btnDoanhThu_Click(object sender, EventArgs e)
+        {
+            this.Text = "Doanh Thu";
+            pnLoad.Controls.Clear();
+            DoanhThu dt = new DoanhThu();
+            DoanhThu dthu = dt;
+            dthu.Dock = DockStyle.Fill;
+            pnLoad.Controls.Add(dthu);
+        }
     }
 }

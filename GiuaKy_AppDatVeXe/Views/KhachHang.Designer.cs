@@ -142,7 +142,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox2.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(71, 225);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(919, 403);
+            this.groupBox2.Size = new System.Drawing.Size(919, 367);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Sách Khách Hàng";
@@ -155,7 +155,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(919, 379);
+            this.dataGridView1.Size = new System.Drawing.Size(919, 336);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1

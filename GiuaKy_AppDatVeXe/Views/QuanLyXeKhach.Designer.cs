@@ -84,6 +84,7 @@
             this.btnDoanhThu.TabIndex = 2;
             this.btnDoanhThu.Text = "Doanh Thu";
             this.btnDoanhThu.UseVisualStyleBackColor = false;
+            this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
             // panel1
             // 

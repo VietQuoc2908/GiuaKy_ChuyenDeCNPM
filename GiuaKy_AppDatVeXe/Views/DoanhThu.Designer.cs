@@ -35,10 +35,10 @@ namespace GiuaKy_AppDatVeXe.Views
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -68,16 +68,16 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(163, 52);
+            this.dateTimePicker1.Location = new System.Drawing.Point(102, 52);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(230, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(331, 31);
             this.dateTimePicker1.TabIndex = 36;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Minion Pro Med", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(88, 56);
+            this.label11.Location = new System.Drawing.Point(15, 57);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 23);
             this.label11.TabIndex = 35;
@@ -85,8 +85,8 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -102,18 +102,11 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Minion Pro Med", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(441, 57);
+            this.label1.Location = new System.Drawing.Point(485, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 23);
             this.label1.TabIndex = 37;
             this.label1.Text = "Tới ngày";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(516, 52);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(230, 31);
-            this.dateTimePicker2.TabIndex = 38;
             // 
             // button4
             // 
@@ -128,9 +121,9 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Minion Pro", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(550, 560);
+            this.label2.Location = new System.Drawing.Point(527, 560);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 32);
+            this.label2.Size = new System.Drawing.Size(186, 33);
             this.label2.TabIndex = 39;
             this.label2.Text = "Tổng Doanh Thu";
             // 
@@ -143,6 +136,13 @@ namespace GiuaKy_AppDatVeXe.Views
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(254, 30);
             this.textBox1.TabIndex = 41;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(571, 52);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(331, 31);
+            this.dateTimePicker2.TabIndex = 38;
             // 
             // DoanhThu
             // 
@@ -172,9 +172,9 @@ namespace GiuaKy_AppDatVeXe.Views
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
