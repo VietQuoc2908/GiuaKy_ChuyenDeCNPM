@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DatVeXeKhachModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="KhachHang">
+          <Key>
+            <PropertyRef Name="Sdt" />
+          </Key>
+          <Property Name="Sdt" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="LichTrinh">
+          <Key>
+            <PropertyRef Name="MaLT" />
+          </Key>
+          <Property Name="MaLT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BienSo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="GioDi" Type="time" Precision="7" Nullable="false" />
+          <Property Name="NgayDi" Type="date" Nullable="false" />
+          <Property Name="DiemDi" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiemDen" Type="nvarchar" MaxLength="50" />
+          <Property Name="GiaTien" Type="money" Nullable="false" />
+          <Property Name="TrangThai" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Ve">
+          <Key>
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaVe" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MaLT" Type="int" Nullable="false" />
+          <Property Name="MaGhe" Type="varchar" MaxLength="3" />
+          <Property Name="Sdt" Type="varchar" MaxLength="10" />
+          <Property Name="TrangThai" Type="int" Nullable="false" />
+          <Property Name="GioDi" Type="varchar" MaxLength="5" />
+          <Property Name="GiaVe" Type="money" />
+        </EntityType>
+        <EntityType Name="Xe">
+          <Key>
+            <PropertyRef Name="BienSo" />
+          </Key>
+          <Property Name="BienSo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenXe" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SoChoNgoi" Type="int" Nullable="false" />
+          <Property Name="TinhTrang" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__LichTrinh__BienS__3D5E1FD2">
+          <End Role="Xe" Type="Self.Xe" Multiplicity="1" />
+          <End Role="LichTrinh" Type="Self.LichTrinh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Xe">
+              <PropertyRef Name="BienSo" />
+            </Principal>
+            <Dependent Role="LichTrinh">
+              <PropertyRef Name="BienSo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ve__MaLT__4222D4EF">
+          <End Role="LichTrinh" Type="Self.LichTrinh" Multiplicity="1" />
+          <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LichTrinh">
+              <PropertyRef Name="MaLT" />
+            </Principal>
+            <Dependent Role="Ve">
+              <PropertyRef Name="MaLT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ve__Sdt__4316F928">
+          <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
+          <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KhachHang">
+              <PropertyRef Name="Sdt" />
+            </Principal>
+            <Dependent Role="Ve">
+              <PropertyRef Name="Sdt" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DatVeXeKhachModelStoreContainer">
+          <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LichTrinh" EntityType="Self.LichTrinh" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ve" EntityType="Self.Ve" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Xe" EntityType="Self.Xe" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__LichTrinh__BienS__3D5E1FD2" Association="Self.FK__LichTrinh__BienS__3D5E1FD2">
+            <End Role="Xe" EntitySet="Xe" />
+            <End Role="LichTrinh" EntitySet="LichTrinh" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ve__MaLT__4222D4EF" Association="Self.FK__Ve__MaLT__4222D4EF">
+            <End Role="LichTrinh" EntitySet="LichTrinh" />
+            <End Role="Ve" EntitySet="Ve" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ve__Sdt__4316F928" Association="Self.FK__Ve__Sdt__4316F928">
+            <End Role="KhachHang" EntitySet="KhachHang" />
+            <End Role="Ve" EntitySet="Ve" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatVeXeKhachModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="KhachHang">
+          <Key>
+            <PropertyRef Name="Sdt" />
+          </Key>
+          <Property Name="Sdt" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Ves" Relationship="Self.FK__Ve__Sdt__4316F928" FromRole="KhachHang" ToRole="Ve" />
+        </EntityType>
+        <EntityType Name="LichTrinh">
+          <Key>
+            <PropertyRef Name="MaLT" />
+          </Key>
+          <Property Name="MaLT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BienSo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GioDi" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="NgayDi" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DiemDi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DiemDen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GiaTien" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="TrangThai" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Xe" Relationship="Self.FK__LichTrinh__BienS__3D5E1FD2" FromRole="LichTrinh" ToRole="Xe" />
+          <NavigationProperty Name="Ves" Relationship="Self.FK__Ve__MaLT__4222D4EF" FromRole="LichTrinh" ToRole="Ve" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Ve">
+          <Key>
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaVe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MaLT" Type="Int32" Nullable="false" />
+          <Property Name="MaGhe" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Sdt" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="TrangThai" Type="Int32" Nullable="false" />
+          <Property Name="GioDi" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="GiaVe" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="KhachHang" Relationship="Self.FK__Ve__Sdt__4316F928" FromRole="Ve" ToRole="KhachHang" />
+          <NavigationProperty Name="LichTrinh" Relationship="Self.FK__Ve__MaLT__4222D4EF" FromRole="Ve" ToRole="LichTrinh" />
+        </EntityType>
+        <EntityType Name="Xe">
+          <Key>
+            <PropertyRef Name="BienSo" />
+          </Key>
+          <Property Name="BienSo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TenXe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SoChoNgoi" Type="Int32" Nullable="false" />
+          <Property Name="TinhTrang" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="LichTrinhs" Relationship="Self.FK__LichTrinh__BienS__3D5E1FD2" FromRole="Xe" ToRole="LichTrinh" />
+        </EntityType>
+        <Association Name="FK__Ve__Sdt__4316F928">
+          <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
+          <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KhachHang">
+              <PropertyRef Name="Sdt" />
+            </Principal>
+            <Dependent Role="Ve">
+              <PropertyRef Name="Sdt" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__LichTrinh__BienS__3D5E1FD2">
+          <End Role="Xe" Type="Self.Xe" Multiplicity="1" />
+          <End Role="LichTrinh" Type="Self.LichTrinh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Xe">
+              <PropertyRef Name="BienSo" />
+            </Principal>
+            <Dependent Role="LichTrinh">
+              <PropertyRef Name="BienSo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ve__MaLT__4222D4EF">
+          <End Role="LichTrinh" Type="Self.LichTrinh" Multiplicity="1" />
+          <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LichTrinh">
+              <PropertyRef Name="MaLT" />
+            </Principal>
+            <Dependent Role="Ve">
+              <PropertyRef Name="MaLT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DatVeXeKhachEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
+          <EntitySet Name="LichTrinhs" EntityType="Self.LichTrinh" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Ves" EntityType="Self.Ve" />
+          <EntitySet Name="Xes" EntityType="Self.Xe" />
+          <AssociationSet Name="FK__Ve__Sdt__4316F928" Association="Self.FK__Ve__Sdt__4316F928">
+            <End Role="KhachHang" EntitySet="KhachHangs" />
+            <End Role="Ve" EntitySet="Ves" />
+          </AssociationSet>
+          <AssociationSet Name="FK__LichTrinh__BienS__3D5E1FD2" Association="Self.FK__LichTrinh__BienS__3D5E1FD2">
+            <End Role="Xe" EntitySet="Xes" />
+            <End Role="LichTrinh" EntitySet="LichTrinhs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ve__MaLT__4222D4EF" Association="Self.FK__Ve__MaLT__4222D4EF">
+            <End Role="LichTrinh" EntitySet="LichTrinhs" />
+            <End Role="Ve" EntitySet="Ves" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatVeXeKhachModelStoreContainer" CdmEntityContainer="DatVeXeKhachEntities">
+          <EntitySetMapping Name="KhachHangs">
+            <EntityTypeMapping TypeName="DatVeXeKhachModel.KhachHang">
+              <MappingFragment StoreEntitySet="KhachHang">
+                <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LichTrinhs">
+            <EntityTypeMapping TypeName="DatVeXeKhachModel.LichTrinh">
+              <MappingFragment StoreEntitySet="LichTrinh">
+                <ScalarProperty Name="MaLT" ColumnName="MaLT" />
+                <ScalarProperty Name="BienSo" ColumnName="BienSo" />
+                <ScalarProperty Name="GioDi" ColumnName="GioDi" />
+                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
+                <ScalarProperty Name="DiemDi" ColumnName="DiemDi" />
+                <ScalarProperty Name="DiemDen" ColumnName="DiemDen" />
+                <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DatVeXeKhachModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ves">
+            <EntityTypeMapping TypeName="DatVeXeKhachModel.Ve">
+              <MappingFragment StoreEntitySet="Ve">
+                <ScalarProperty Name="MaVe" ColumnName="MaVe" />
+                <ScalarProperty Name="MaLT" ColumnName="MaLT" />
+                <ScalarProperty Name="MaGhe" ColumnName="MaGhe" />
+                <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+                <ScalarProperty Name="GioDi" ColumnName="GioDi" />
+                <ScalarProperty Name="GiaVe" ColumnName="GiaVe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Xes">
+            <EntityTypeMapping TypeName="DatVeXeKhachModel.Xe">
+              <MappingFragment StoreEntitySet="Xe">
+                <ScalarProperty Name="BienSo" ColumnName="BienSo" />
+                <ScalarProperty Name="TenXe" ColumnName="TenXe" />
+                <ScalarProperty Name="SoChoNgoi" ColumnName="SoChoNgoi" />
+                <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

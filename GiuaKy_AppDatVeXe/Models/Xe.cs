@@ -17,18 +17,15 @@ namespace GiuaKy_AppDatVeXe.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Xe()
         {
-            this.ThoiGianHoatDongs = new HashSet<ThoiGianHoatDong>();
-            this.ThongTinVeXes = new HashSet<ThongTinVeXe>();
+            this.LichTrinhs = new HashSet<LichTrinh>();
         }
     
-        public string bienSo { get; set; }
-        public string taiXe { get; set; }
-        public Nullable<int> sdtTaiXe { get; set; }
-        public string tenXe { get; set; }
+        public string BienSo { get; set; }
+        public string TenXe { get; set; }
+        public int SoChoNgoi { get; set; }
+        public int TinhTrang { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThoiGianHoatDong> ThoiGianHoatDongs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThongTinVeXe> ThongTinVeXes { get; set; }
+        public virtual ICollection<LichTrinh> LichTrinhs { get; set; }
     }
 }

@@ -12,15 +12,17 @@ namespace GiuaKy_AppDatVeXe.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class ThoiGianHoatDong
+    public partial class Ve
     {
-        public string bienSo { get; set; }
-        public string maBen { get; set; }
-        public Nullable<System.DateTime> ngayKyHopDong { get; set; }
-        public string loaiXe { get; set; }
-        public Nullable<double> chietKhau { get; set; }
+        public int MaVe { get; set; }
+        public int MaLT { get; set; }
+        public string MaGhe { get; set; }
+        public string Sdt { get; set; }
+        public int TrangThai { get; set; }
+        public string GioDi { get; set; }
+        public Nullable<decimal> GiaVe { get; set; }
     
-        public virtual BenXe BenXe { get; set; }
-        public virtual Xe Xe { get; set; }
+        public virtual KhachHang KhachHang { get; set; }
+        public virtual LichTrinh LichTrinh { get; set; }
     }
 }

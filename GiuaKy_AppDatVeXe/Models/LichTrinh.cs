@@ -12,25 +12,25 @@ namespace GiuaKy_AppDatVeXe.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class ChuyenDi
+    public partial class LichTrinh
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ChuyenDi()
+        public LichTrinh()
         {
-            this.DatVeXes = new HashSet<DatVeXe>();
-            this.ThongTinVeXes = new HashSet<ThongTinVeXe>();
+            this.Ves = new HashSet<Ve>();
         }
     
-        public int maCD { get; set; }
-        public string gioDi { get; set; }
-        public System.DateTime ngayDi { get; set; }
-        public string diemDi { get; set; }
-        public string diemDen { get; set; }
-        public double giaVe { get; set; }
+        public int MaLT { get; set; }
+        public string BienSo { get; set; }
+        public System.TimeSpan GioDi { get; set; }
+        public System.DateTime NgayDi { get; set; }
+        public string DiemDi { get; set; }
+        public string DiemDen { get; set; }
+        public decimal GiaTien { get; set; }
+        public int TrangThai { get; set; }
     
+        public virtual Xe Xe { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DatVeXe> DatVeXes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThongTinVeXe> ThongTinVeXes { get; set; }
+        public virtual ICollection<Ve> Ves { get; set; }
     }
 }
