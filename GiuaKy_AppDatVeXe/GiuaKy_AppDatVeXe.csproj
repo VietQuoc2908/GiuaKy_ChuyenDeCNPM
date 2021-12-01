@@ -59,50 +59,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\BenXe.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ChuyenDi.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DatVeXe.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HanhKhach.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HopDongNV.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NhanVien.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TaiKhoan.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ThoiGianHoatDong.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ThongTinVeXe.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Xe.cs">
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\XeKhachModels.Context.cs">
+    <Compile Include="Models\XeKhachModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>XeKhachModels.Context.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\XeKhachModels.cs">
+    <Compile Include="Models\XeKhachModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>XeKhachModels.tt</DependentUpon>
+      <DependentUpon>XeKhachModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\XeKhachModels.Designer.cs">
-      <DependentUpon>XeKhachModels.cs</DependentUpon>
+    <Compile Include="Models\XeKhachModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XeKhachModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -163,10 +165,10 @@
     </EmbeddedResource>
     <EntityDeploy Include="Models\XeKhachModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>XeKhachModels.Designer.cs</LastGenOutput>
+      <LastGenOutput>XeKhachModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\XeKhachModels.edmx.diagram">
-      <DependentUpon>XeKhachModels.edmx</DependentUpon>
+    <None Include="Models\XeKhachModel.edmx.diagram">
+      <DependentUpon>XeKhachModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -186,6 +188,18 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\search.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\seat3.png" />
+    <None Include="Resources\seat2.png" />
+    <None Include="Resources\seat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Models\XeKhachModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>XeKhachModel.edmx</DependentUpon>
@@ -196,28 +210,6 @@
       <DependentUpon>XeKhachModel.edmx</DependentUpon>
       <LastGenOutput>XeKhachModel.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\search.png" />
-    <None Include="Resources\update.png" />
-    <None Include="Resources\delete.png" />
-    <None Include="Resources\add.png" />
-    <None Include="Resources\seat3.png" />
-    <None Include="Resources\seat2.png" />
-    <None Include="Resources\seat1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Models\XeKhachModels.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>XeKhachModels.edmx</DependentUpon>
-      <LastGenOutput>XeKhachModels.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\XeKhachModels.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>XeKhachModels.edmx</DependentUpon>
-      <LastGenOutput>XeKhachModels.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -13,10 +13,10 @@ namespace GiuaKy_AppDatVeXe.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLyBanVeXeKhachEntities : DbContext
+    public partial class QuanLyBanVeXeKhachEntities1 : DbContext
     {
-        public QuanLyBanVeXeKhachEntities()
-            : base("name=QuanLyBanVeXeKhachEntities")
+        public QuanLyBanVeXeKhachEntities1()
+            : base("name=QuanLyBanVeXeKhachEntities1")
         {
         }
     
