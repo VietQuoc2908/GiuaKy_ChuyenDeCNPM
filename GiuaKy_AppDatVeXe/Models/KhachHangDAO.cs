@@ -9,23 +9,13 @@ namespace GiuaKy_AppDatVeXe.Models
 {
     class KhachHangDAO
     {
-        DatVeXeKhachEntities db;
+        private DatVeXeKhachEntities db;
 
         public KhachHangDAO()
         {
             db = new DatVeXeKhachEntities();
         }
 
-        public dynamic layDSKhachHang()
-        {
-            var khachHangs = db.KhachHangs.Select(kh => new
-            {
-                kh.Sdt,
-                kh.HoTen,
-                kh.DiaChi
-            }).ToList();
-            return khachHangs;
-        }
         public DataTable getAll()
         {
             var query = from kh in db.KhachHangs select kh;
