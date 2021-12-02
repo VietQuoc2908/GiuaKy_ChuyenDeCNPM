@@ -193,6 +193,7 @@
       <DependentUpon>DatVeXeKhachModel.edmx</DependentUpon>
       <LastGenOutput>DatVeXeKhachModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\search1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
