@@ -36,7 +36,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.label1 = new System.Windows.Forms.Label();
             this.txtSdt = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -57,7 +57,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtSdt);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtTimKiem);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,6 +74,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(230, 30);
             this.txtHoTen.TabIndex = 59;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtSdt_TextChanged);
             // 
             // label2
             // 
@@ -91,6 +92,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(230, 30);
             this.txtDiaChi.TabIndex = 57;
+            this.txtDiaChi.TextChanged += new System.EventHandler(this.txtSdt_TextChanged);
             // 
             // label1
             // 
@@ -108,6 +110,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.txtSdt.Name = "txtSdt";
             this.txtSdt.Size = new System.Drawing.Size(230, 30);
             this.txtSdt.TabIndex = 55;
+            this.txtSdt.TextChanged += new System.EventHandler(this.txtSdt_TextChanged);
             // 
             // label20
             // 
@@ -119,22 +122,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.label20.TabIndex = 54;
             this.label20.Text = "Số điện thoại:";
             // 
-            // textBox7
+            // txtTimKiem
             // 
-            this.textBox7.Location = new System.Drawing.Point(204, 43);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(230, 30);
-            this.textBox7.TabIndex = 53;
+            this.txtTimKiem.Location = new System.Drawing.Point(272, 36);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(162, 30);
+            this.txtTimKiem.TabIndex = 53;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(58, 43);
+            this.label19.Location = new System.Drawing.Point(33, 43);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(148, 20);
+            this.label19.Size = new System.Drawing.Size(214, 20);
             this.label19.TabIndex = 52;
-            this.label19.Text = "Mã Khách Hàng:";
+            this.label19.Text = "Nhập thông tin tìm kiếm:";
             // 
             // groupBox2
             // 
@@ -159,6 +163,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(913, 338);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnThem
             // 
@@ -168,6 +173,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnThem.TabIndex = 2;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -177,6 +183,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -186,6 +193,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnTimKiem
             // 
@@ -195,6 +203,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnTimKiem.TabIndex = 5;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // KhachHang
             // 
@@ -222,7 +231,7 @@ namespace GiuaKy_AppDatVeXe.Views
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtSdt;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtDiaChi;
