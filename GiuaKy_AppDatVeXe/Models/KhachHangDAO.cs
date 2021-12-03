@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GiuaKy_AppDatVeXe.Models
 {
@@ -24,18 +25,18 @@ namespace GiuaKy_AppDatVeXe.Models
 
             column = new DataColumn();
             column.DataType = System.Type.GetType("System.String");
-            column.ColumnName = "Sdt";
+            column.ColumnName = "Số Điện Thoại";
             column.Unique = true;
             table.Columns.Add(column);
 
             column = new DataColumn();
             column.DataType = System.Type.GetType("System.String");
-            column.ColumnName = "HoTen";
+            column.ColumnName = "Họ Tên";
             table.Columns.Add(column);
 
             column = new DataColumn();
             column.DataType = System.Type.GetType("System.String");
-            column.ColumnName = "DiaChi";
+            column.ColumnName = "Địa Chỉ";
             table.Columns.Add(column);
 
             DataSet dataSet = new DataSet();
@@ -44,9 +45,9 @@ namespace GiuaKy_AppDatVeXe.Models
             foreach (var item in query)
             {
                 DataRow row = table.NewRow();
-                row["Sdt"] = item.Sdt;
-                row["HoTen"] = item.HoTen;
-                row["DiaChi"] = item.DiaChi;
+                row["Số Điện Thoại"] = item.Sdt;
+                row["Họ Tên"] = item.HoTen;
+                row["Địa Chỉ"] = item.DiaChi;
                 table.Rows.Add(row);
             }
             return table;
@@ -60,18 +61,18 @@ namespace GiuaKy_AppDatVeXe.Models
 
             column = new DataColumn();
             column.DataType = System.Type.GetType("System.String");
-            column.ColumnName = "Sdt";
+            column.ColumnName = "Số Điện Thoại";
             column.Unique = true;
             table.Columns.Add(column);
 
             column = new DataColumn();
             column.DataType = System.Type.GetType("System.String");
-            column.ColumnName = "HoTen";
+            column.ColumnName = "Họ Tên";
             table.Columns.Add(column);
 
             column = new DataColumn();
             column.DataType = System.Type.GetType("System.String");
-            column.ColumnName = "DiaChi";
+            column.ColumnName = "Địa Chỉ";
             table.Columns.Add(column);
 
             DataSet dataSet = new DataSet();
@@ -80,9 +81,9 @@ namespace GiuaKy_AppDatVeXe.Models
             foreach (var item in query)
             {
                 DataRow row = table.NewRow();
-                row["Sdt"] = item.Sdt;
-                row["HoTen"] = item.HoTen;
-                row["DiaChi"] = item.DiaChi;
+                row["Số Điện Thoại"] = item.Sdt;
+                row["Họ Tên"] = item.HoTen;
+                row["Địa Chỉ"] = item.DiaChi;
                 table.Rows.Add(row);
             }
             return table;
@@ -90,6 +91,15 @@ namespace GiuaKy_AppDatVeXe.Models
 
         public int insert(KhachHang khachHang)
         {
+            var query = from kh in db.KhachHangs select kh.Sdt;
+            foreach (var item in query)
+            {
+                if (khachHang.Sdt.Equals(item))
+                {
+                    MessageBox.Show("Số điện thoại đã tồn tại.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return 0;
+                }
+            }
             db.KhachHangs.Add(khachHang);
             return db.SaveChanges();
         }

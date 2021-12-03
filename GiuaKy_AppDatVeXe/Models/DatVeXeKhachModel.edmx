@@ -19,8 +19,8 @@
           </Key>
           <Property Name="MaLT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="BienSo" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="GioDi" Type="time" Precision="7" Nullable="false" />
-          <Property Name="NgayDi" Type="date" Nullable="false" />
+          <Property Name="GioDi" Type="varchar" MaxLength="5" />
+          <Property Name="NgayDi" Type="datetime" />
           <Property Name="DiemDi" Type="nvarchar" MaxLength="50" />
           <Property Name="DiemDen" Type="nvarchar" MaxLength="50" />
           <Property Name="GiaTien" Type="money" Nullable="false" />
@@ -132,8 +132,8 @@
           </Key>
           <Property Name="MaLT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="BienSo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="GioDi" Type="Time" Nullable="false" Precision="7" />
-          <Property Name="NgayDi" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="GioDi" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="NgayDi" Type="DateTime" Precision="3" />
           <Property Name="DiemDi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DiemDen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GiaTien" Type="Decimal" Precision="19" Scale="4" Nullable="false" />

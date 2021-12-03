@@ -33,6 +33,7 @@ namespace GiuaKy_AppDatVeXe.Views
             btnXoa.Enabled = false;
             btnSua.Enabled = false;
             btnTimKiem.Enabled = false;
+            btnReset.Enabled = false;
             showAll();
         }
 
@@ -43,9 +44,9 @@ namespace GiuaKy_AppDatVeXe.Views
             var index = e.RowIndex;
             if (index >= 0)
             {
-                txtSdt.Text = Convert.ToString(dataGridView1.Rows[index].Cells["Sdt"].Value);
-                txtHoTen.Text = Convert.ToString(dataGridView1.Rows[index].Cells["HoTen"].Value);
-                txtDiaChi.Text = Convert.ToString(dataGridView1.Rows[index].Cells["DiaChi"].Value);
+                txtSdt.Text = Convert.ToString(dataGridView1.Rows[index].Cells["Số Điện Thoại"].Value);
+                txtHoTen.Text = Convert.ToString(dataGridView1.Rows[index].Cells["Họ Tên"].Value);
+                txtDiaChi.Text = Convert.ToString(dataGridView1.Rows[index].Cells["Địa Chỉ"].Value);
             }
         }
 
@@ -69,10 +70,12 @@ namespace GiuaKy_AppDatVeXe.Views
             if (string.IsNullOrEmpty(value))
             {
                 btnTimKiem.Enabled = false;
+                showAll();
             }
             else
             {
                 btnTimKiem.Enabled = true;
+                btnReset.Enabled = true;
             }
         }
 
@@ -81,6 +84,7 @@ namespace GiuaKy_AppDatVeXe.Views
             btnThem.Enabled = true;
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
+            btnReset.Enabled = true;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -131,6 +135,18 @@ namespace GiuaKy_AppDatVeXe.Views
         private void label19_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtSdt.Clear();
+            txtHoTen.Clear();
+            txtDiaChi.Clear();
+            txtTimKiem.Clear();
+
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
         }
     }
 }

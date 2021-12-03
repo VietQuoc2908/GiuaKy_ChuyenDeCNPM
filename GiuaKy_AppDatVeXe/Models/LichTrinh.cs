@@ -22,8 +22,8 @@ namespace GiuaKy_AppDatVeXe.Models
     
         public int MaLT { get; set; }
         public string BienSo { get; set; }
-        public System.TimeSpan GioDi { get; set; }
-        public System.DateTime NgayDi { get; set; }
+        public string GioDi { get; set; }
+        public Nullable<System.DateTime> NgayDi { get; set; }
         public string DiemDi { get; set; }
         public string DiemDen { get; set; }
         public decimal GiaTien { get; set; }

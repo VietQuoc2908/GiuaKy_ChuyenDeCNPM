@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\BanVeDAO.cs" />
     <Compile Include="Models\DatVeXeKhachModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -183,6 +184,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Models\DatVeXeKhachModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DatVeXeKhachModel.edmx</DependentUpon>
@@ -193,7 +197,6 @@
       <DependentUpon>DatVeXeKhachModel.edmx</DependentUpon>
       <LastGenOutput>DatVeXeKhachModel.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\search1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
