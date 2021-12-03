@@ -56,5 +56,16 @@ namespace GiuaKy_AppDatVeXe.Models
                 return null;
             return lichTrinh;
         }
+
+        public List<Ve> getVebyMaLT(int maLT)
+        {
+            List<Ve> ves = new List<Ve>();
+            var query = from v in db.Ves where v.MaLT == maLT select v;
+            foreach (var item in query)
+            {
+                ves.Add(item);
+            }
+            return ves;
+        }
     }
 }

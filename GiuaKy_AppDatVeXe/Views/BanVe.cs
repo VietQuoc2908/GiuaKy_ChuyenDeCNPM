@@ -14,6 +14,13 @@ namespace GiuaKy_AppDatVeXe.Views
     public partial class BanVe : UserControl
     {
         private BanVeDAO banVeDAO;
+
+        Bitmap img1 = Properties.Resources.seat1;
+        Bitmap img2 = Properties.Resources.seat2;
+        Bitmap img3 = Properties.Resources.seat3;
+
+        private PictureBox p = new PictureBox();
+
         public BanVe()
         {
             InitializeComponent();
@@ -71,6 +78,41 @@ namespace GiuaKy_AppDatVeXe.Views
             hienThiDiemDi(ngayDi);
             hienThiDiemDen(ngayDi);
             hienThiGioDi(ngayDi);
+        }
+
+        private void ChonGhe_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            p.Image = img3;
+
+
+        }
+
+        private void btnLichTrinh_Click(object sender, EventArgs e)
+        {
+            string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
+            string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
+            string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
+            DateTime ngayDi = dtpNgayDi.Value.Date;
+            LichTrinh dsLichTrinh = new LichTrinh();
+            dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
+
+            if (dsLichTrinh != null)
+            {
+                List<Ve> dsVe = banVeDAO.getVebyMaLT(dsLichTrinh.MaLT);
+                foreach (Ve ve in dsVe)
+                {
+                    p.Tag = ve.MaGhe;
+                    if (ve.TrangThai == 1)
+                    {
+                        p.Image = img2;
+                    }
+                    else
+                    {
+                        p.Image = img1;
+                    }
+                }
+            }
         }
     }
 }
