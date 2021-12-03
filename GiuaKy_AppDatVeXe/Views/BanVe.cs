@@ -18,16 +18,10 @@ namespace GiuaKy_AppDatVeXe.Views
         {
             InitializeComponent();
             banVeDAO = new BanVeDAO();
-            //hienThiDiemDi();
-            //hienThiDiemDen();
-            //hienThiGioDi();
-            DateTime ngayDi = dtpNgayDi.Value;
-            LoadLichTrinh(ngayDi);
         }
 
-        public void hienThiDiemDi()
+        public void hienThiDiemDi(DateTime ngayDi)
         {
-            DateTime ngayDi = dtpNgayDi.Value;
             List<LichTrinh> dsDiemDi = banVeDAO.getLichTrinhByNgayDi(ngayDi);
             for (int i = 0; i < dsDiemDi.Count - 1; i++)
             {
@@ -41,9 +35,8 @@ namespace GiuaKy_AppDatVeXe.Views
             cbDiemDi.DisplayMember = "DiemDi";
         }
 
-        public void hienThiDiemDen()
+        public void hienThiDiemDen(DateTime ngayDi)
         {
-            DateTime ngayDi = dtpNgayDi.Value;
             List<LichTrinh> dsDiemDen = banVeDAO.getLichTrinhByNgayDi(ngayDi);
             for (int i = 0; i < dsDiemDen.Count - 1; i++)
             {
@@ -57,9 +50,8 @@ namespace GiuaKy_AppDatVeXe.Views
             cbDiemDen.DisplayMember = "DiemDen";
         }
 
-        public void hienThiGioDi()
+        public void hienThiGioDi(DateTime ngayDi)
         {
-            DateTime ngayDi = dtpNgayDi.Value;
             List<LichTrinh> dsGioDi = banVeDAO.getLichTrinhByNgayDi(ngayDi);
             for (int i = 0; i < dsGioDi.Count - 1; i++)
             {
@@ -75,35 +67,10 @@ namespace GiuaKy_AppDatVeXe.Views
 
         private void dtpNgayDi_ValueChanged(object sender, EventArgs e)
         {
-            DateTime ngayDi = dtpNgayDi.Value;
-            //hienThiDiemDi();
-            //hienThiDiemDen();
-            //hienThiGioDi();
-            LoadLichTrinh(ngayDi);
-            //List<LichTrinh> dsNgayDi = banVeDAO.getLichTrinh(ngayDi);
-            //cbDiemDi.DataSource = dsNgayDi;
-            //cbDiemDi.DisplayMember = dsNgayDi;
-
-            //cbDiemDen.DataSource = dsNgayDi;
-            //cbDiemDen.DisplayMember = dsNgayDi.DiemDen;
-
-            //cbGioDi.DataSource = dsNgayDi;
-            //cbGioDi.DisplayMember = dsNgayDi.GioDi;
-        }
-
-        private void LoadLichTrinh(DateTime date)
-        {
-            cbDiemDi.DataSource = banVeDAO.getLichTrinhByNgayDi(date);
-            cbDiemDi.DisplayMember = "DiemDi";
-        }
-
-        private void cbDiemDi_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbDiemDi.DataSource = null;
-            DateTime ngayDi = dtpNgayDi.Value;
-            LichTrinh formatLt = cbDiemDi.SelectedItem as LichTrinh;
-            cbDiemDi.DataSource = banVeDAO.getLichTrinhbyMaLT(formatLt.MaLT);
-            cbDiemDi.DisplayMember = "DiemDi";
+            DateTime ngayDi = dtpNgayDi.Value.Date;
+            hienThiDiemDi(ngayDi);
+            hienThiDiemDen(ngayDi);
+            hienThiGioDi(ngayDi);
         }
     }
 }

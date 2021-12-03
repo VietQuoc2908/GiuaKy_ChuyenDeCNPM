@@ -1070,7 +1070,6 @@ namespace GiuaKy_AppDatVeXe.Views
             this.cbDiemDi.Name = "cbDiemDi";
             this.cbDiemDi.Size = new System.Drawing.Size(230, 24);
             this.cbDiemDi.TabIndex = 28;
-            this.cbDiemDi.SelectedIndexChanged += new System.EventHandler(this.cbDiemDi_SelectedIndexChanged);
             // 
             // label9
             // 
