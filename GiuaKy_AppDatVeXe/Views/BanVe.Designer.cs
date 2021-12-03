@@ -54,13 +54,14 @@ namespace GiuaKy_AppDatVeXe.Views
             this.txtSdt = new System.Windows.Forms.TextBox();
             this.lbChuyen = new System.Windows.Forms.Label();
             this.lbThoiGian = new System.Windows.Forms.Label();
-            this.lbSoGhe = new System.Windows.Forms.Label();
             this.lbGiaVe = new System.Windows.Forms.Label();
             this.lbSoLuong = new System.Windows.Forms.Label();
             this.lbTongTien = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.panelThongTin = new System.Windows.Forms.Panel();
+            this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.lbSoGhe = new System.Windows.Forms.Label();
+            this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -132,8 +133,11 @@ namespace GiuaKy_AppDatVeXe.Views
             this.p10 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.p1 = new System.Windows.Forms.PictureBox();
+            this.lboxSoGheChon = new System.Windows.Forms.ListBox();
             this.panelLichTrinh.SuspendLayout();
             this.panelThongTin.SuspendLayout();
+            this.groupBox31.SuspendLayout();
+            this.groupBox32.SuspendLayout();
             this.panelSoDoGhe.SuspendLayout();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p30)).BeginInit();
@@ -221,6 +225,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // cbDiemDi
             // 
+            this.cbDiemDi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDiemDi.FormattingEnabled = true;
             this.cbDiemDi.Location = new System.Drawing.Point(27, 81);
             this.cbDiemDi.Name = "cbDiemDi";
@@ -239,6 +244,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // cbDiemDen
             // 
+            this.cbDiemDen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDiemDen.FormattingEnabled = true;
             this.cbDiemDen.Location = new System.Drawing.Point(279, 81);
             this.cbDiemDen.Name = "cbDiemDen";
@@ -249,7 +255,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(23, 113);
+            this.label10.Location = new System.Drawing.Point(276, 113);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(124, 20);
             this.label10.TabIndex = 31;
@@ -257,8 +263,9 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // cbGioDi
             // 
+            this.cbGioDi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbGioDi.FormattingEnabled = true;
-            this.cbGioDi.Location = new System.Drawing.Point(27, 139);
+            this.cbGioDi.Location = new System.Drawing.Point(280, 140);
             this.cbGioDi.Name = "cbGioDi";
             this.cbGioDi.Size = new System.Drawing.Size(230, 24);
             this.cbGioDi.TabIndex = 32;
@@ -267,7 +274,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(276, 113);
+            this.label11.Location = new System.Drawing.Point(23, 113);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 20);
             this.label11.TabIndex = 33;
@@ -275,15 +282,17 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // dtpNgayDi
             // 
-            this.dtpNgayDi.Location = new System.Drawing.Point(279, 141);
+            this.dtpNgayDi.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.dtpNgayDi.Location = new System.Drawing.Point(26, 141);
             this.dtpNgayDi.Name = "dtpNgayDi";
-            this.dtpNgayDi.Size = new System.Drawing.Size(230, 22);
+            this.dtpNgayDi.Size = new System.Drawing.Size(231, 22);
             this.dtpNgayDi.TabIndex = 34;
             this.dtpNgayDi.ValueChanged += new System.EventHandler(this.dtpNgayDi_ValueChanged);
             // 
             // btnLichTrinh
             // 
             this.btnLichTrinh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLichTrinh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLichTrinh.FlatAppearance.BorderSize = 0;
             this.btnLichTrinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btnLichTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -330,176 +339,161 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(54, 86);
+            this.label14.BackColor = System.Drawing.Color.LightGray;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(10, 33);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(70, 20);
+            this.label14.Size = new System.Drawing.Size(100, 25);
             this.label14.TabIndex = 36;
             this.label14.Text = "Chuyến:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(54, 110);
+            this.label13.BackColor = System.Drawing.Color.LightGray;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(10, 60);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 20);
+            this.label13.Size = new System.Drawing.Size(100, 25);
             this.label13.TabIndex = 38;
             this.label13.Text = "Thời gian:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(54, 135);
+            this.label15.BackColor = System.Drawing.Color.LightGray;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(10, 87);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 20);
+            this.label15.Size = new System.Drawing.Size(100, 25);
             this.label15.TabIndex = 40;
             this.label15.Text = "Số ghế:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(54, 158);
+            this.label16.BackColor = System.Drawing.Color.LightGray;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(10, 115);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 20);
+            this.label16.Size = new System.Drawing.Size(100, 25);
             this.label16.TabIndex = 42;
             this.label16.Text = "Giá vé:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(54, 183);
+            this.label17.BackColor = System.Drawing.Color.LightGray;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(10, 142);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(79, 20);
+            this.label17.Size = new System.Drawing.Size(100, 25);
             this.label17.TabIndex = 44;
             this.label17.Text = "Số lượng:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(54, 210);
+            this.label18.BackColor = System.Drawing.Color.LightGray;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(10, 172);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(83, 20);
+            this.label18.Size = new System.Drawing.Size(100, 25);
             this.label18.TabIndex = 46;
             this.label18.Text = "Tổng tiền:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(56, 296);
+            this.label19.BackColor = System.Drawing.Color.LightGray;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(10, 38);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 17);
+            this.label19.Size = new System.Drawing.Size(127, 25);
             this.label19.TabIndex = 48;
             this.label19.Text = "Họ tên:";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(203, 293);
+            this.txtHoTen.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTen.Location = new System.Drawing.Point(159, 37);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(275, 22);
+            this.txtHoTen.Size = new System.Drawing.Size(313, 27);
             this.txtHoTen.TabIndex = 49;
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(56, 325);
+            this.label20.BackColor = System.Drawing.Color.LightGray;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(10, 71);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 17);
+            this.label20.Size = new System.Drawing.Size(127, 25);
             this.label20.TabIndex = 50;
             this.label20.Text = "Số điện thoại:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtSdt
             // 
-            this.txtSdt.Location = new System.Drawing.Point(203, 322);
+            this.txtSdt.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSdt.Location = new System.Drawing.Point(159, 70);
             this.txtSdt.Name = "txtSdt";
-            this.txtSdt.Size = new System.Drawing.Size(275, 22);
+            this.txtSdt.Size = new System.Drawing.Size(313, 27);
             this.txtSdt.TabIndex = 51;
             // 
             // lbChuyen
             // 
-            this.lbChuyen.AutoSize = true;
             this.lbChuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChuyen.Location = new System.Drawing.Point(201, 86);
+            this.lbChuyen.Location = new System.Drawing.Point(159, 31);
             this.lbChuyen.Name = "lbChuyen";
-            this.lbChuyen.Size = new System.Drawing.Size(158, 20);
+            this.lbChuyen.Size = new System.Drawing.Size(317, 25);
             this.lbChuyen.TabIndex = 52;
-            this.lbChuyen.Text = "Sài gòn - Sóc Trăng";
             // 
             // lbThoiGian
             // 
-            this.lbThoiGian.AutoSize = true;
             this.lbThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThoiGian.Location = new System.Drawing.Point(201, 110);
+            this.lbThoiGian.Location = new System.Drawing.Point(159, 63);
             this.lbThoiGian.Name = "lbThoiGian";
-            this.lbThoiGian.Size = new System.Drawing.Size(162, 20);
+            this.lbThoiGian.Size = new System.Drawing.Size(317, 22);
             this.lbThoiGian.TabIndex = 53;
-            this.lbThoiGian.Text = "11/11/2020 11:30AM";
-            // 
-            // lbSoGhe
-            // 
-            this.lbSoGhe.AutoSize = true;
-            this.lbSoGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoGhe.Location = new System.Drawing.Point(201, 135);
-            this.lbSoGhe.Name = "lbSoGhe";
-            this.lbSoGhe.Size = new System.Drawing.Size(79, 20);
-            this.lbSoGhe.TabIndex = 54;
-            this.lbSoGhe.Text = "A1 A2 A3";
             // 
             // lbGiaVe
             // 
-            this.lbGiaVe.AutoSize = true;
             this.lbGiaVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGiaVe.Location = new System.Drawing.Point(201, 158);
+            this.lbGiaVe.Location = new System.Drawing.Point(159, 115);
             this.lbGiaVe.Name = "lbGiaVe";
-            this.lbGiaVe.Size = new System.Drawing.Size(107, 20);
+            this.lbGiaVe.Size = new System.Drawing.Size(317, 22);
             this.lbGiaVe.TabIndex = 55;
-            this.lbGiaVe.Text = "170.000 VNĐ";
             // 
             // lbSoLuong
             // 
-            this.lbSoLuong.AutoSize = true;
             this.lbSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoLuong.Location = new System.Drawing.Point(201, 183);
+            this.lbSoLuong.Location = new System.Drawing.Point(159, 143);
             this.lbSoLuong.Name = "lbSoLuong";
-            this.lbSoLuong.Size = new System.Drawing.Size(18, 20);
+            this.lbSoLuong.Size = new System.Drawing.Size(317, 22);
             this.lbSoLuong.TabIndex = 56;
-            this.lbSoLuong.Text = "3";
             // 
             // lbTongTien
             // 
-            this.lbTongTien.AutoSize = true;
             this.lbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongTien.Location = new System.Drawing.Point(201, 210);
+            this.lbTongTien.Location = new System.Drawing.Point(159, 173);
             this.lbTongTien.Name = "lbTongTien";
-            this.lbTongTien.Size = new System.Drawing.Size(102, 20);
+            this.lbTongTien.Size = new System.Drawing.Size(317, 22);
             this.lbTongTien.TabIndex = 57;
-            this.lbTongTien.Text = "510.000VNĐ";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(54, 263);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(122, 24);
-            this.label27.TabIndex = 58;
-            this.label27.Text = "Khách hàng";
             // 
             // btnThanhToan
             // 
             this.btnThanhToan.BackColor = System.Drawing.SystemColors.Control;
+            this.btnThanhToan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThanhToan.FlatAppearance.BorderSize = 0;
             this.btnThanhToan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btnThanhToan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.Black;
-            this.btnThanhToan.Location = new System.Drawing.Point(304, 361);
+            this.btnThanhToan.Location = new System.Drawing.Point(296, 105);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(174, 38);
             this.btnThanhToan.TabIndex = 60;
@@ -509,30 +503,59 @@ namespace GiuaKy_AppDatVeXe.Views
             // panelThongTin
             // 
             this.panelThongTin.BackColor = System.Drawing.Color.LightGray;
-            this.panelThongTin.Controls.Add(this.btnThanhToan);
-            this.panelThongTin.Controls.Add(this.label27);
-            this.panelThongTin.Controls.Add(this.lbTongTien);
-            this.panelThongTin.Controls.Add(this.lbSoLuong);
-            this.panelThongTin.Controls.Add(this.lbGiaVe);
-            this.panelThongTin.Controls.Add(this.lbSoGhe);
-            this.panelThongTin.Controls.Add(this.lbThoiGian);
-            this.panelThongTin.Controls.Add(this.lbChuyen);
-            this.panelThongTin.Controls.Add(this.txtSdt);
-            this.panelThongTin.Controls.Add(this.label20);
-            this.panelThongTin.Controls.Add(this.txtHoTen);
-            this.panelThongTin.Controls.Add(this.label19);
-            this.panelThongTin.Controls.Add(this.label18);
-            this.panelThongTin.Controls.Add(this.label17);
-            this.panelThongTin.Controls.Add(this.label16);
-            this.panelThongTin.Controls.Add(this.label15);
-            this.panelThongTin.Controls.Add(this.label13);
-            this.panelThongTin.Controls.Add(this.label14);
             this.panelThongTin.Controls.Add(this.label12);
+            this.panelThongTin.Controls.Add(this.groupBox31);
+            this.panelThongTin.Controls.Add(this.groupBox32);
             this.panelThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongTin.Location = new System.Drawing.Point(521, 227);
             this.panelThongTin.Name = "panelThongTin";
             this.panelThongTin.Size = new System.Drawing.Size(541, 501);
             this.panelThongTin.TabIndex = 8;
+            // 
+            // groupBox31
+            // 
+            this.groupBox31.Controls.Add(this.lbChuyen);
+            this.groupBox31.Controls.Add(this.label14);
+            this.groupBox31.Controls.Add(this.lbTongTien);
+            this.groupBox31.Controls.Add(this.label13);
+            this.groupBox31.Controls.Add(this.lbSoLuong);
+            this.groupBox31.Controls.Add(this.label15);
+            this.groupBox31.Controls.Add(this.lbGiaVe);
+            this.groupBox31.Controls.Add(this.label16);
+            this.groupBox31.Controls.Add(this.lbSoGhe);
+            this.groupBox31.Controls.Add(this.label17);
+            this.groupBox31.Controls.Add(this.lbThoiGian);
+            this.groupBox31.Controls.Add(this.label18);
+            this.groupBox31.Font = new System.Drawing.Font("Minion Pro", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox31.Location = new System.Drawing.Point(27, 55);
+            this.groupBox31.Name = "groupBox31";
+            this.groupBox31.Size = new System.Drawing.Size(482, 205);
+            this.groupBox31.TabIndex = 61;
+            this.groupBox31.TabStop = false;
+            this.groupBox31.Text = "Thông tin vé";
+            // 
+            // lbSoGhe
+            // 
+            this.lbSoGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoGhe.Location = new System.Drawing.Point(159, 89);
+            this.lbSoGhe.Name = "lbSoGhe";
+            this.lbSoGhe.Size = new System.Drawing.Size(317, 22);
+            this.lbSoGhe.TabIndex = 54;
+            // 
+            // groupBox32
+            // 
+            this.groupBox32.Controls.Add(this.btnThanhToan);
+            this.groupBox32.Controls.Add(this.txtHoTen);
+            this.groupBox32.Controls.Add(this.txtSdt);
+            this.groupBox32.Controls.Add(this.label19);
+            this.groupBox32.Controls.Add(this.label20);
+            this.groupBox32.Font = new System.Drawing.Font("Minion Pro", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox32.Location = new System.Drawing.Point(27, 266);
+            this.groupBox32.Name = "groupBox32";
+            this.groupBox32.Size = new System.Drawing.Size(482, 157);
+            this.groupBox32.TabIndex = 62;
+            this.groupBox32.TabStop = false;
+            this.groupBox32.Text = "Xác nhận thông tin";
             // 
             // label1
             // 
@@ -624,6 +647,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // panelSoDoGhe
             // 
+            this.panelSoDoGhe.Controls.Add(this.lboxSoGheChon);
             this.panelSoDoGhe.Controls.Add(this.groupBox16);
             this.panelSoDoGhe.Controls.Add(this.groupBox17);
             this.panelSoDoGhe.Controls.Add(this.groupBox18);
@@ -669,13 +693,13 @@ namespace GiuaKy_AppDatVeXe.Views
             this.panelSoDoGhe.Name = "panelSoDoGhe";
             this.panelSoDoGhe.Size = new System.Drawing.Size(521, 728);
             this.panelSoDoGhe.TabIndex = 6;
-            this.panelSoDoGhe.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox16
             // 
             this.groupBox16.BackColor = System.Drawing.Color.Transparent;
             this.groupBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox16.Controls.Add(this.p30);
+            this.groupBox16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox16.Location = new System.Drawing.Point(428, 440);
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.Size = new System.Drawing.Size(63, 74);
@@ -700,6 +724,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox17.BackColor = System.Drawing.Color.Transparent;
             this.groupBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox17.Controls.Add(this.p27);
+            this.groupBox17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox17.Location = new System.Drawing.Point(428, 360);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Size = new System.Drawing.Size(63, 74);
@@ -724,6 +749,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox18.BackColor = System.Drawing.Color.Transparent;
             this.groupBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox18.Controls.Add(this.p29);
+            this.groupBox18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox18.Location = new System.Drawing.Point(359, 440);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Size = new System.Drawing.Size(63, 74);
@@ -748,6 +774,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox19.BackColor = System.Drawing.Color.Transparent;
             this.groupBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox19.Controls.Add(this.p28);
+            this.groupBox19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox19.Location = new System.Drawing.Point(290, 440);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Size = new System.Drawing.Size(63, 74);
@@ -772,6 +799,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox20.BackColor = System.Drawing.Color.Transparent;
             this.groupBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox20.Controls.Add(this.p21);
+            this.groupBox20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox20.Location = new System.Drawing.Point(428, 200);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Size = new System.Drawing.Size(63, 74);
@@ -796,6 +824,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox21.BackColor = System.Drawing.Color.Transparent;
             this.groupBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox21.Controls.Add(this.p18);
+            this.groupBox21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox21.Location = new System.Drawing.Point(428, 120);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Size = new System.Drawing.Size(63, 74);
@@ -820,6 +849,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox22.BackColor = System.Drawing.Color.Transparent;
             this.groupBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox22.Controls.Add(this.p24);
+            this.groupBox22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox22.Location = new System.Drawing.Point(428, 280);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Size = new System.Drawing.Size(63, 74);
@@ -844,6 +874,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox23.BackColor = System.Drawing.Color.Transparent;
             this.groupBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox23.Controls.Add(this.p20);
+            this.groupBox23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox23.Location = new System.Drawing.Point(359, 200);
             this.groupBox23.Name = "groupBox23";
             this.groupBox23.Size = new System.Drawing.Size(63, 74);
@@ -868,6 +899,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox24.BackColor = System.Drawing.Color.Transparent;
             this.groupBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox24.Controls.Add(this.p23);
+            this.groupBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox24.Location = new System.Drawing.Point(359, 280);
             this.groupBox24.Name = "groupBox24";
             this.groupBox24.Size = new System.Drawing.Size(63, 74);
@@ -892,6 +924,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox25.BackColor = System.Drawing.Color.Transparent;
             this.groupBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox25.Controls.Add(this.p26);
+            this.groupBox25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox25.Location = new System.Drawing.Point(359, 360);
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.Size = new System.Drawing.Size(63, 74);
@@ -916,6 +949,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox26.BackColor = System.Drawing.Color.Transparent;
             this.groupBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox26.Controls.Add(this.p19);
+            this.groupBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox26.Location = new System.Drawing.Point(290, 200);
             this.groupBox26.Name = "groupBox26";
             this.groupBox26.Size = new System.Drawing.Size(63, 74);
@@ -940,6 +974,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox27.BackColor = System.Drawing.Color.Transparent;
             this.groupBox27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox27.Controls.Add(this.p22);
+            this.groupBox27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox27.Location = new System.Drawing.Point(290, 280);
             this.groupBox27.Name = "groupBox27";
             this.groupBox27.Size = new System.Drawing.Size(63, 74);
@@ -964,6 +999,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox28.BackColor = System.Drawing.Color.Transparent;
             this.groupBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox28.Controls.Add(this.p17);
+            this.groupBox28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox28.Location = new System.Drawing.Point(359, 120);
             this.groupBox28.Name = "groupBox28";
             this.groupBox28.Size = new System.Drawing.Size(63, 74);
@@ -988,6 +1024,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox29.BackColor = System.Drawing.Color.Transparent;
             this.groupBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox29.Controls.Add(this.p25);
+            this.groupBox29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox29.Location = new System.Drawing.Point(290, 360);
             this.groupBox29.Name = "groupBox29";
             this.groupBox29.Size = new System.Drawing.Size(63, 74);
@@ -1012,6 +1049,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox30.BackColor = System.Drawing.Color.Transparent;
             this.groupBox30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox30.Controls.Add(this.p16);
+            this.groupBox30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox30.Location = new System.Drawing.Point(290, 120);
             this.groupBox30.Name = "groupBox30";
             this.groupBox30.Size = new System.Drawing.Size(63, 74);
@@ -1036,6 +1074,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox13.BackColor = System.Drawing.Color.Transparent;
             this.groupBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox13.Controls.Add(this.p15);
+            this.groupBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox13.Location = new System.Drawing.Point(162, 440);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(63, 74);
@@ -1061,6 +1100,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox7.Controls.Add(this.pictureBox1);
             this.groupBox7.Controls.Add(this.p12);
+            this.groupBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox7.Location = new System.Drawing.Point(162, 360);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(63, 74);
@@ -1096,6 +1136,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox14.BackColor = System.Drawing.Color.Transparent;
             this.groupBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox14.Controls.Add(this.p14);
+            this.groupBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox14.Location = new System.Drawing.Point(93, 440);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(63, 74);
@@ -1120,6 +1161,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox15.BackColor = System.Drawing.Color.Transparent;
             this.groupBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox15.Controls.Add(this.p13);
+            this.groupBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox15.Location = new System.Drawing.Point(24, 440);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(63, 74);
@@ -1144,6 +1186,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox4.Controls.Add(this.p6);
+            this.groupBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox4.Location = new System.Drawing.Point(162, 200);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(63, 74);
@@ -1168,6 +1211,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox3.Controls.Add(this.p3);
+            this.groupBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox3.Location = new System.Drawing.Point(162, 120);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(63, 74);
@@ -1192,6 +1236,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox8.BackColor = System.Drawing.Color.Transparent;
             this.groupBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox8.Controls.Add(this.p9);
+            this.groupBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox8.Location = new System.Drawing.Point(162, 280);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(63, 74);
@@ -1216,6 +1261,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox5.Controls.Add(this.p5);
+            this.groupBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox5.Location = new System.Drawing.Point(93, 200);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(63, 74);
@@ -1240,6 +1286,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox11.BackColor = System.Drawing.Color.Transparent;
             this.groupBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox11.Controls.Add(this.p8);
+            this.groupBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox11.Location = new System.Drawing.Point(93, 280);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(63, 74);
@@ -1264,6 +1311,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox9.BackColor = System.Drawing.Color.Transparent;
             this.groupBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox9.Controls.Add(this.p11);
+            this.groupBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox9.Location = new System.Drawing.Point(93, 360);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(63, 74);
@@ -1288,6 +1336,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
             this.groupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox6.Controls.Add(this.p4);
+            this.groupBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox6.Location = new System.Drawing.Point(24, 200);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(63, 74);
@@ -1312,6 +1361,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox12.BackColor = System.Drawing.Color.Transparent;
             this.groupBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox12.Controls.Add(this.p7);
+            this.groupBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox12.Location = new System.Drawing.Point(24, 280);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(63, 74);
@@ -1336,6 +1386,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox2.Controls.Add(this.p2);
+            this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox2.Location = new System.Drawing.Point(93, 120);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(63, 74);
@@ -1360,6 +1411,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox10.BackColor = System.Drawing.Color.Transparent;
             this.groupBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox10.Controls.Add(this.p10);
+            this.groupBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox10.Location = new System.Drawing.Point(24, 360);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(63, 74);
@@ -1384,6 +1436,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox1.Controls.Add(this.p1);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox1.Location = new System.Drawing.Point(24, 120);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(63, 74);
@@ -1403,6 +1456,16 @@ namespace GiuaKy_AppDatVeXe.Views
             this.p1.Tag = "a1";
             this.p1.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
+            // lboxSoGheChon
+            // 
+            this.lboxSoGheChon.BackColor = System.Drawing.SystemColors.Control;
+            this.lboxSoGheChon.FormattingEnabled = true;
+            this.lboxSoGheChon.ItemHeight = 16;
+            this.lboxSoGheChon.Location = new System.Drawing.Point(12, 697);
+            this.lboxSoGheChon.Name = "lboxSoGheChon";
+            this.lboxSoGheChon.Size = new System.Drawing.Size(10, 4);
+            this.lboxSoGheChon.TabIndex = 56;
+            // 
             // BanVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1416,6 +1479,9 @@ namespace GiuaKy_AppDatVeXe.Views
             this.panelLichTrinh.PerformLayout();
             this.panelThongTin.ResumeLayout(false);
             this.panelThongTin.PerformLayout();
+            this.groupBox31.ResumeLayout(false);
+            this.groupBox32.ResumeLayout(false);
+            this.groupBox32.PerformLayout();
             this.panelSoDoGhe.ResumeLayout(false);
             this.panelSoDoGhe.PerformLayout();
             this.groupBox16.ResumeLayout(false);
@@ -1508,11 +1574,9 @@ namespace GiuaKy_AppDatVeXe.Views
         private System.Windows.Forms.TextBox txtSdt;
         private System.Windows.Forms.Label lbChuyen;
         private System.Windows.Forms.Label lbThoiGian;
-        private System.Windows.Forms.Label lbSoGhe;
         private System.Windows.Forms.Label lbGiaVe;
         private System.Windows.Forms.Label lbSoLuong;
         private System.Windows.Forms.Label lbTongTien;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.Panel panelThongTin;
         private System.Windows.Forms.Label label1;
@@ -1586,5 +1650,9 @@ namespace GiuaKy_AppDatVeXe.Views
         private System.Windows.Forms.PictureBox p10;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox p1;
+        private System.Windows.Forms.GroupBox groupBox31;
+        private System.Windows.Forms.GroupBox groupBox32;
+        private System.Windows.Forms.Label lbSoGhe;
+        private System.Windows.Forms.ListBox lboxSoGheChon;
     }
 }

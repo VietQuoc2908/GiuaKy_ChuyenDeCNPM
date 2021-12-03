@@ -41,6 +41,7 @@
             // btnBanVe
             // 
             this.btnBanVe.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnBanVe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBanVe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btnBanVe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnBanVe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -57,6 +58,7 @@
             // btnInVe
             // 
             this.btnInVe.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnInVe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInVe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btnInVe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnInVe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -73,6 +75,7 @@
             // btnDoanhThu
             // 
             this.btnDoanhThu.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnDoanhThu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDoanhThu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btnDoanhThu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -102,6 +105,7 @@
             // btnKhachHang
             // 
             this.btnKhachHang.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKhachHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.btnKhachHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

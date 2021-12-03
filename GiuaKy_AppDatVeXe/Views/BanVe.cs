@@ -18,13 +18,13 @@ namespace GiuaKy_AppDatVeXe.Views
         Bitmap img1 = Properties.Resources.seat1;
         Bitmap img2 = Properties.Resources.seat2;
         Bitmap img3 = Properties.Resources.seat3;
-
-        private PictureBox p = new PictureBox();
+        //private PictureBox p = new PictureBox();
 
         public BanVe()
         {
             InitializeComponent();
             banVeDAO = new BanVeDAO();
+            hienThiThongTinVe();
         }
 
         public void hienThiDiemDi(DateTime ngayDi)
@@ -79,13 +79,34 @@ namespace GiuaKy_AppDatVeXe.Views
             hienThiDiemDen(ngayDi);
             hienThiGioDi(ngayDi);
         }
-
+       
         private void ChonGhe_Click(object sender, EventArgs e)
         {
+            
             PictureBox p = (PictureBox)sender;
-            p.Image = img3;
+            if(p.Image == img3) 
+            {
+                p.Image = img1;
+                lboxSoGheChon.Items.Remove(p.Name);
+            }
+            else
+            {
+                p.Image = img3;
+                lboxSoGheChon.Items.Add(p.Name);
+            }
+           
         }
-
+        //Hien thi thong tin ve
+        private void hienThiThongTinVe()
+        {
+            string ghe = "";
+            foreach (var item in lboxSoGheChon.Items)
+            {
+                ghe += item.ToString() + " ";
+            }
+            lbSoGhe.Text = ghe;
+        }
+        //Lấy thông tin Picturebox
         private List<PictureBox> danhsachPictureBox()
         {
             List<PictureBox> pictureBoxes = new List<PictureBox>();
@@ -120,8 +141,11 @@ namespace GiuaKy_AppDatVeXe.Views
                     {
                         foreach (var item in pictureBoxes)
                         {
-                            if (item.Name == ve.MaGhe)
+                            if (item.Name == ve.MaGhe) 
+                            {
                                 item.Image = img2;
+                                item.Enabled = false;
+                            }     
                         }
                     }
                     else
@@ -133,6 +157,12 @@ namespace GiuaKy_AppDatVeXe.Views
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show("Không có chuyến này! Bạn vui lòng tìm chuyến khác nhé", "Lịch trình không tồn tại", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
+
+       
     }
 }
