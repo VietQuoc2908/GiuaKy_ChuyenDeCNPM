@@ -80,7 +80,8 @@ namespace GiuaKy_AppDatVeXe.Views
             hienThiDiemDen(ngayDi);
             hienThiGioDi(ngayDi);
             btnLichTrinh.Enabled = true;
-            
+
+
         }
         public ListBox lboxSoGheChon = new ListBox();
         private void ChonGhe_Click(object sender, EventArgs e)
@@ -100,6 +101,50 @@ namespace GiuaKy_AppDatVeXe.Views
                 hienThiThongTinVe();
             }
            
+        }
+
+        public void loadLichTrinh()
+        {
+            string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
+            string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
+            string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
+            DateTime ngayDi = dtpNgayDi.Value.Date;
+            LichTrinh dsLichTrinh = new LichTrinh();
+            dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
+
+            if (dsLichTrinh != null)
+            {
+                List<PictureBox> pictureBoxes = danhsachPictureBox();
+                List<Ve> dsVe = banVeDAO.getVebyMaLT(dsLichTrinh.MaLT);
+                foreach (Ve ve in dsVe)
+                {
+                    if (ve.TrangThai == 1)
+                    {
+                        foreach (var item in pictureBoxes)
+                        {
+                            if (item.Name == ve.MaGhe)
+                            {
+                                item.Image = img2;
+                                item.Enabled = false;
+
+                            }
+                        }
+                    }
+                    else
+                    {
+                        foreach (var item in pictureBoxes)
+                        {
+                            item.Image = img1;
+                        }
+                    }
+                }
+                panelSoDoGhe.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Không có chuyến này! Bạn vui lòng tìm chuyến khác nhé", "Lịch trình không tồn tại", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                panelSoDoGhe.Enabled = false;
+            }
         }
         //Hien thi thong tin ve
         private void hienThiThongTinVe()
@@ -144,47 +189,7 @@ namespace GiuaKy_AppDatVeXe.Views
         }
         private void btnLichTrinh_Click(object sender, EventArgs e)
         {
-            string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
-            string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
-            string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
-            DateTime ngayDi = dtpNgayDi.Value.Date;
-            LichTrinh dsLichTrinh = new LichTrinh();
-            dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
-
-            if (dsLichTrinh != null)
-            {  
-                List<PictureBox> pictureBoxes = danhsachPictureBox();
-                List<Ve> dsVe = banVeDAO.getVebyMaLT(dsLichTrinh.MaLT);
-                foreach (Ve ve in dsVe)
-                {
-                    if (ve.TrangThai == 1)
-                    {
-                        foreach (var item in pictureBoxes)
-                        {
-                            if (item.Name == ve.MaGhe) 
-                            {
-                                item.Image = img2;
-                                item.Enabled = false;
-                               
-                            }     
-                        }
-                    }
-                    else
-                    {
-                        foreach (var item in pictureBoxes)
-                        {
-                                item.Image = img1;
-                        }
-                    }
-                }
-                panelSoDoGhe.Enabled = true;
-            }
-            else
-            {
-                MessageBox.Show("Không có chuyến này! Bạn vui lòng tìm chuyến khác nhé", "Lịch trình không tồn tại", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                panelSoDoGhe.Enabled = false;
-            }
-           
+            loadLichTrinh();
         }
 
         private void cbGioDi_TextChanged(object sender, EventArgs e)
@@ -216,6 +221,7 @@ namespace GiuaKy_AppDatVeXe.Views
                 ve.GiaVe = giaVe;
                 banVeDAO.insert(ve);
             }
+            loadLichTrinh();
         }
     }
 }
