@@ -154,10 +154,6 @@ namespace GiuaKy_AppDatVeXe.Views
         private void loadLichTrinh()
         {
             List<PictureBox> pictureBoxes = danhsachPictureBox();
-            foreach (var item in pictureBoxes)
-            {
-                item.Refresh();
-            }
             string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
             string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
             string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
@@ -222,8 +218,6 @@ namespace GiuaKy_AppDatVeXe.Views
             int trangThai = 1;
             Decimal giaVe = dsLichTrinh.GiaTien;
             int count = 0;
-            
-
             foreach (string item in lboxSoGheChon.Items)
             {
                 Ve ve = new Ve();
