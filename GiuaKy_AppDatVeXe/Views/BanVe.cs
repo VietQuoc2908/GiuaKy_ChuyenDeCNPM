@@ -192,8 +192,27 @@ namespace GiuaKy_AppDatVeXe.Views
         {
             string hoTen = txtHoTen.Text;
             string sdt = txtSdt.Text;
-            
-            
+            string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
+            string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
+            string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
+            DateTime ngayDi = dtpNgayDi.Value.Date;
+            LichTrinh dsLichTrinh = new LichTrinh();
+            dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
+            int maLT = dsLichTrinh.MaLT;
+            int trangThai = 1;
+            Decimal giaVe = dsLichTrinh.GiaTien;
+
+            foreach (string item in lboxSoGheChon.Items)
+            {
+                Ve ve = new Ve();
+                ve.MaLT = maLT;
+                ve.MaGhe = item;
+                ve.Sdt = sdt;
+                ve.TrangThai = trangThai;
+                ve.GioDi = gioDi;
+                ve.GiaVe = giaVe;
+                banVeDAO.insert(ve);
+            }
         }
     }
 }

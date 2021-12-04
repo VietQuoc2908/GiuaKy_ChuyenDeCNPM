@@ -76,10 +76,8 @@ namespace GiuaKy_AppDatVeXe.Models
         }
         public int insert(Ve ve)
         {
-            //var query = from kh in db.Ves select kh;
             db.Ves.Add(ve);
             return db.SaveChanges();
         }
-
     }
 }
