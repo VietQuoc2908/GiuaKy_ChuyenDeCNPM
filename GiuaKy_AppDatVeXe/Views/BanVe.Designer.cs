@@ -73,133 +73,132 @@ namespace GiuaKy_AppDatVeXe.Views
             this.label6 = new System.Windows.Forms.Label();
             this.panelSoDoGhe = new System.Windows.Forms.Panel();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.p30 = new System.Windows.Forms.PictureBox();
+            this.A30 = new System.Windows.Forms.PictureBox();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.p27 = new System.Windows.Forms.PictureBox();
+            this.A27 = new System.Windows.Forms.PictureBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.p29 = new System.Windows.Forms.PictureBox();
+            this.A29 = new System.Windows.Forms.PictureBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.p28 = new System.Windows.Forms.PictureBox();
+            this.A28 = new System.Windows.Forms.PictureBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.p21 = new System.Windows.Forms.PictureBox();
+            this.A21 = new System.Windows.Forms.PictureBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.p18 = new System.Windows.Forms.PictureBox();
+            this.A18 = new System.Windows.Forms.PictureBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.p24 = new System.Windows.Forms.PictureBox();
+            this.A24 = new System.Windows.Forms.PictureBox();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.p20 = new System.Windows.Forms.PictureBox();
+            this.A20 = new System.Windows.Forms.PictureBox();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.p23 = new System.Windows.Forms.PictureBox();
+            this.A23 = new System.Windows.Forms.PictureBox();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.p26 = new System.Windows.Forms.PictureBox();
+            this.A26 = new System.Windows.Forms.PictureBox();
             this.groupBox26 = new System.Windows.Forms.GroupBox();
-            this.p19 = new System.Windows.Forms.PictureBox();
+            this.A19 = new System.Windows.Forms.PictureBox();
             this.groupBox27 = new System.Windows.Forms.GroupBox();
-            this.p22 = new System.Windows.Forms.PictureBox();
+            this.A22 = new System.Windows.Forms.PictureBox();
             this.groupBox28 = new System.Windows.Forms.GroupBox();
-            this.p17 = new System.Windows.Forms.PictureBox();
+            this.A17 = new System.Windows.Forms.PictureBox();
             this.groupBox29 = new System.Windows.Forms.GroupBox();
-            this.p25 = new System.Windows.Forms.PictureBox();
+            this.A25 = new System.Windows.Forms.PictureBox();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
-            this.p16 = new System.Windows.Forms.PictureBox();
+            this.A16 = new System.Windows.Forms.PictureBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.p15 = new System.Windows.Forms.PictureBox();
+            this.A15 = new System.Windows.Forms.PictureBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.p12 = new System.Windows.Forms.PictureBox();
+            this.A12 = new System.Windows.Forms.PictureBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.p14 = new System.Windows.Forms.PictureBox();
+            this.A14 = new System.Windows.Forms.PictureBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.p13 = new System.Windows.Forms.PictureBox();
+            this.A13 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.p6 = new System.Windows.Forms.PictureBox();
+            this.A6 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.p3 = new System.Windows.Forms.PictureBox();
+            this.A3 = new System.Windows.Forms.PictureBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.p9 = new System.Windows.Forms.PictureBox();
+            this.A9 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.p5 = new System.Windows.Forms.PictureBox();
+            this.A5 = new System.Windows.Forms.PictureBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.p8 = new System.Windows.Forms.PictureBox();
+            this.A8 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.p11 = new System.Windows.Forms.PictureBox();
+            this.A11 = new System.Windows.Forms.PictureBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.p4 = new System.Windows.Forms.PictureBox();
+            this.A4 = new System.Windows.Forms.PictureBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.p7 = new System.Windows.Forms.PictureBox();
+            this.A7 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.p2 = new System.Windows.Forms.PictureBox();
+            this.A2 = new System.Windows.Forms.PictureBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.p10 = new System.Windows.Forms.PictureBox();
+            this.A10 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.p1 = new System.Windows.Forms.PictureBox();
-            this.lboxSoGheChon = new System.Windows.Forms.ListBox();
+            this.A1 = new System.Windows.Forms.PictureBox();
             this.panelLichTrinh.SuspendLayout();
             this.panelThongTin.SuspendLayout();
             this.groupBox31.SuspendLayout();
             this.groupBox32.SuspendLayout();
             this.panelSoDoGhe.SuspendLayout();
             this.groupBox16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A30)).BeginInit();
             this.groupBox17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A27)).BeginInit();
             this.groupBox18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A29)).BeginInit();
             this.groupBox19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A28)).BeginInit();
             this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A21)).BeginInit();
             this.groupBox21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A18)).BeginInit();
             this.groupBox22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A24)).BeginInit();
             this.groupBox23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A20)).BeginInit();
             this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A23)).BeginInit();
             this.groupBox25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A26)).BeginInit();
             this.groupBox26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A19)).BeginInit();
             this.groupBox27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A22)).BeginInit();
             this.groupBox28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A17)).BeginInit();
             this.groupBox29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A25)).BeginInit();
             this.groupBox30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A16)).BeginInit();
             this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A15)).BeginInit();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A12)).BeginInit();
             this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A14)).BeginInit();
             this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A13)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A6)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A3)).BeginInit();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A9)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A5)).BeginInit();
             this.groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A8)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A11)).BeginInit();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A4)).BeginInit();
             this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A7)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A2)).BeginInit();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A10)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A1)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -231,6 +230,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.cbDiemDi.Name = "cbDiemDi";
             this.cbDiemDi.Size = new System.Drawing.Size(230, 24);
             this.cbDiemDi.TabIndex = 28;
+            this.cbDiemDi.TextChanged += new System.EventHandler(this.cbGioDi_TextChanged);
             // 
             // label9
             // 
@@ -250,6 +250,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.cbDiemDen.Name = "cbDiemDen";
             this.cbDiemDen.Size = new System.Drawing.Size(230, 24);
             this.cbDiemDen.TabIndex = 30;
+            this.cbDiemDen.TextChanged += new System.EventHandler(this.cbGioDi_TextChanged);
             // 
             // label10
             // 
@@ -269,6 +270,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.cbGioDi.Name = "cbGioDi";
             this.cbGioDi.Size = new System.Drawing.Size(230, 24);
             this.cbGioDi.TabIndex = 32;
+            this.cbGioDi.TextChanged += new System.EventHandler(this.cbGioDi_TextChanged);
             // 
             // label11
             // 
@@ -499,6 +501,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnThanhToan.TabIndex = 60;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // panelThongTin
             // 
@@ -647,7 +650,6 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // panelSoDoGhe
             // 
-            this.panelSoDoGhe.Controls.Add(this.lboxSoGheChon);
             this.panelSoDoGhe.Controls.Add(this.groupBox16);
             this.panelSoDoGhe.Controls.Add(this.groupBox17);
             this.panelSoDoGhe.Controls.Add(this.groupBox18);
@@ -698,382 +700,382 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             this.groupBox16.BackColor = System.Drawing.Color.Transparent;
             this.groupBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox16.Controls.Add(this.p30);
+            this.groupBox16.Controls.Add(this.A30);
             this.groupBox16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox16.Location = new System.Drawing.Point(428, 440);
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.Size = new System.Drawing.Size(63, 74);
             this.groupBox16.TabIndex = 55;
             this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "B15";
+            this.groupBox16.Text = "A30";
             // 
-            // p30
+            // A30
             // 
-            this.p30.Image = ((System.Drawing.Image)(resources.GetObject("p30.Image")));
-            this.p30.Location = new System.Drawing.Point(6, 21);
-            this.p30.Name = "p30";
-            this.p30.Size = new System.Drawing.Size(51, 41);
-            this.p30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p30.TabIndex = 0;
-            this.p30.TabStop = false;
-            this.p30.Tag = "b15";
-            this.p30.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A30.Image = ((System.Drawing.Image)(resources.GetObject("A30.Image")));
+            this.A30.Location = new System.Drawing.Point(6, 21);
+            this.A30.Name = "A30";
+            this.A30.Size = new System.Drawing.Size(51, 41);
+            this.A30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A30.TabIndex = 0;
+            this.A30.TabStop = false;
+            this.A30.Tag = "b15";
+            this.A30.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox17
             // 
             this.groupBox17.BackColor = System.Drawing.Color.Transparent;
             this.groupBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox17.Controls.Add(this.p27);
+            this.groupBox17.Controls.Add(this.A27);
             this.groupBox17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox17.Location = new System.Drawing.Point(428, 360);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Size = new System.Drawing.Size(63, 74);
             this.groupBox17.TabIndex = 52;
             this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "B12";
+            this.groupBox17.Text = "A27";
             // 
-            // p27
+            // A27
             // 
-            this.p27.Image = ((System.Drawing.Image)(resources.GetObject("p27.Image")));
-            this.p27.Location = new System.Drawing.Point(6, 21);
-            this.p27.Name = "p27";
-            this.p27.Size = new System.Drawing.Size(51, 41);
-            this.p27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p27.TabIndex = 0;
-            this.p27.TabStop = false;
-            this.p27.Tag = "b12";
-            this.p27.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A27.Image = ((System.Drawing.Image)(resources.GetObject("A27.Image")));
+            this.A27.Location = new System.Drawing.Point(6, 21);
+            this.A27.Name = "A27";
+            this.A27.Size = new System.Drawing.Size(51, 41);
+            this.A27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A27.TabIndex = 0;
+            this.A27.TabStop = false;
+            this.A27.Tag = "b12";
+            this.A27.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox18
             // 
             this.groupBox18.BackColor = System.Drawing.Color.Transparent;
             this.groupBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox18.Controls.Add(this.p29);
+            this.groupBox18.Controls.Add(this.A29);
             this.groupBox18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox18.Location = new System.Drawing.Point(359, 440);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Size = new System.Drawing.Size(63, 74);
             this.groupBox18.TabIndex = 54;
             this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "B14";
+            this.groupBox18.Text = "A29";
             // 
-            // p29
+            // A29
             // 
-            this.p29.Image = ((System.Drawing.Image)(resources.GetObject("p29.Image")));
-            this.p29.Location = new System.Drawing.Point(6, 21);
-            this.p29.Name = "p29";
-            this.p29.Size = new System.Drawing.Size(51, 41);
-            this.p29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p29.TabIndex = 0;
-            this.p29.TabStop = false;
-            this.p29.Tag = "b14";
-            this.p29.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A29.Image = ((System.Drawing.Image)(resources.GetObject("A29.Image")));
+            this.A29.Location = new System.Drawing.Point(6, 21);
+            this.A29.Name = "A29";
+            this.A29.Size = new System.Drawing.Size(51, 41);
+            this.A29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A29.TabIndex = 0;
+            this.A29.TabStop = false;
+            this.A29.Tag = "b14";
+            this.A29.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox19
             // 
             this.groupBox19.BackColor = System.Drawing.Color.Transparent;
             this.groupBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox19.Controls.Add(this.p28);
+            this.groupBox19.Controls.Add(this.A28);
             this.groupBox19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox19.Location = new System.Drawing.Point(290, 440);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Size = new System.Drawing.Size(63, 74);
             this.groupBox19.TabIndex = 53;
             this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "B13";
+            this.groupBox19.Text = "A28";
             // 
-            // p28
+            // A28
             // 
-            this.p28.Image = ((System.Drawing.Image)(resources.GetObject("p28.Image")));
-            this.p28.Location = new System.Drawing.Point(6, 21);
-            this.p28.Name = "p28";
-            this.p28.Size = new System.Drawing.Size(51, 41);
-            this.p28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p28.TabIndex = 0;
-            this.p28.TabStop = false;
-            this.p28.Tag = "b13";
-            this.p28.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A28.Image = ((System.Drawing.Image)(resources.GetObject("A28.Image")));
+            this.A28.Location = new System.Drawing.Point(6, 21);
+            this.A28.Name = "A28";
+            this.A28.Size = new System.Drawing.Size(51, 41);
+            this.A28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A28.TabIndex = 0;
+            this.A28.TabStop = false;
+            this.A28.Tag = "b13";
+            this.A28.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox20
             // 
             this.groupBox20.BackColor = System.Drawing.Color.Transparent;
             this.groupBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox20.Controls.Add(this.p21);
+            this.groupBox20.Controls.Add(this.A21);
             this.groupBox20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox20.Location = new System.Drawing.Point(428, 200);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Size = new System.Drawing.Size(63, 74);
             this.groupBox20.TabIndex = 46;
             this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "B6";
+            this.groupBox20.Text = "A21";
             // 
-            // p21
+            // A21
             // 
-            this.p21.Image = ((System.Drawing.Image)(resources.GetObject("p21.Image")));
-            this.p21.Location = new System.Drawing.Point(6, 21);
-            this.p21.Name = "p21";
-            this.p21.Size = new System.Drawing.Size(51, 41);
-            this.p21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p21.TabIndex = 0;
-            this.p21.TabStop = false;
-            this.p21.Tag = "b6";
-            this.p21.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A21.Image = ((System.Drawing.Image)(resources.GetObject("A21.Image")));
+            this.A21.Location = new System.Drawing.Point(6, 21);
+            this.A21.Name = "A21";
+            this.A21.Size = new System.Drawing.Size(51, 41);
+            this.A21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A21.TabIndex = 0;
+            this.A21.TabStop = false;
+            this.A21.Tag = "b6";
+            this.A21.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox21
             // 
             this.groupBox21.BackColor = System.Drawing.Color.Transparent;
             this.groupBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox21.Controls.Add(this.p18);
+            this.groupBox21.Controls.Add(this.A18);
             this.groupBox21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox21.Location = new System.Drawing.Point(428, 120);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Size = new System.Drawing.Size(63, 74);
             this.groupBox21.TabIndex = 43;
             this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "B3";
+            this.groupBox21.Text = "A18";
             // 
-            // p18
+            // A18
             // 
-            this.p18.Image = ((System.Drawing.Image)(resources.GetObject("p18.Image")));
-            this.p18.Location = new System.Drawing.Point(6, 21);
-            this.p18.Name = "p18";
-            this.p18.Size = new System.Drawing.Size(51, 41);
-            this.p18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p18.TabIndex = 0;
-            this.p18.TabStop = false;
-            this.p18.Tag = "b3";
-            this.p18.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A18.Image = ((System.Drawing.Image)(resources.GetObject("A18.Image")));
+            this.A18.Location = new System.Drawing.Point(6, 21);
+            this.A18.Name = "A18";
+            this.A18.Size = new System.Drawing.Size(51, 41);
+            this.A18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A18.TabIndex = 0;
+            this.A18.TabStop = false;
+            this.A18.Tag = "b3";
+            this.A18.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox22
             // 
             this.groupBox22.BackColor = System.Drawing.Color.Transparent;
             this.groupBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox22.Controls.Add(this.p24);
+            this.groupBox22.Controls.Add(this.A24);
             this.groupBox22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox22.Location = new System.Drawing.Point(428, 280);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Size = new System.Drawing.Size(63, 74);
             this.groupBox22.TabIndex = 49;
             this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "B9";
+            this.groupBox22.Text = "A24";
             // 
-            // p24
+            // A24
             // 
-            this.p24.Image = ((System.Drawing.Image)(resources.GetObject("p24.Image")));
-            this.p24.Location = new System.Drawing.Point(6, 21);
-            this.p24.Name = "p24";
-            this.p24.Size = new System.Drawing.Size(51, 41);
-            this.p24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p24.TabIndex = 0;
-            this.p24.TabStop = false;
-            this.p24.Tag = "b9";
-            this.p24.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A24.Image = ((System.Drawing.Image)(resources.GetObject("A24.Image")));
+            this.A24.Location = new System.Drawing.Point(6, 21);
+            this.A24.Name = "A24";
+            this.A24.Size = new System.Drawing.Size(51, 41);
+            this.A24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A24.TabIndex = 0;
+            this.A24.TabStop = false;
+            this.A24.Tag = "b9";
+            this.A24.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox23
             // 
             this.groupBox23.BackColor = System.Drawing.Color.Transparent;
             this.groupBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox23.Controls.Add(this.p20);
+            this.groupBox23.Controls.Add(this.A20);
             this.groupBox23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox23.Location = new System.Drawing.Point(359, 200);
             this.groupBox23.Name = "groupBox23";
             this.groupBox23.Size = new System.Drawing.Size(63, 74);
             this.groupBox23.TabIndex = 45;
             this.groupBox23.TabStop = false;
-            this.groupBox23.Text = "B5";
+            this.groupBox23.Text = "A20";
             // 
-            // p20
+            // A20
             // 
-            this.p20.Image = ((System.Drawing.Image)(resources.GetObject("p20.Image")));
-            this.p20.Location = new System.Drawing.Point(6, 21);
-            this.p20.Name = "p20";
-            this.p20.Size = new System.Drawing.Size(51, 41);
-            this.p20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p20.TabIndex = 0;
-            this.p20.TabStop = false;
-            this.p20.Tag = "b5";
-            this.p20.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A20.Image = ((System.Drawing.Image)(resources.GetObject("A20.Image")));
+            this.A20.Location = new System.Drawing.Point(6, 21);
+            this.A20.Name = "A20";
+            this.A20.Size = new System.Drawing.Size(51, 41);
+            this.A20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A20.TabIndex = 0;
+            this.A20.TabStop = false;
+            this.A20.Tag = "b5";
+            this.A20.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox24
             // 
             this.groupBox24.BackColor = System.Drawing.Color.Transparent;
             this.groupBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox24.Controls.Add(this.p23);
+            this.groupBox24.Controls.Add(this.A23);
             this.groupBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox24.Location = new System.Drawing.Point(359, 280);
             this.groupBox24.Name = "groupBox24";
             this.groupBox24.Size = new System.Drawing.Size(63, 74);
             this.groupBox24.TabIndex = 48;
             this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "B8";
+            this.groupBox24.Text = "A23";
             // 
-            // p23
+            // A23
             // 
-            this.p23.Image = ((System.Drawing.Image)(resources.GetObject("p23.Image")));
-            this.p23.Location = new System.Drawing.Point(6, 21);
-            this.p23.Name = "p23";
-            this.p23.Size = new System.Drawing.Size(51, 41);
-            this.p23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p23.TabIndex = 0;
-            this.p23.TabStop = false;
-            this.p23.Tag = "b8";
-            this.p23.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A23.Image = ((System.Drawing.Image)(resources.GetObject("A23.Image")));
+            this.A23.Location = new System.Drawing.Point(6, 21);
+            this.A23.Name = "A23";
+            this.A23.Size = new System.Drawing.Size(51, 41);
+            this.A23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A23.TabIndex = 0;
+            this.A23.TabStop = false;
+            this.A23.Tag = "b8";
+            this.A23.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox25
             // 
             this.groupBox25.BackColor = System.Drawing.Color.Transparent;
             this.groupBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox25.Controls.Add(this.p26);
+            this.groupBox25.Controls.Add(this.A26);
             this.groupBox25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox25.Location = new System.Drawing.Point(359, 360);
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.Size = new System.Drawing.Size(63, 74);
             this.groupBox25.TabIndex = 51;
             this.groupBox25.TabStop = false;
-            this.groupBox25.Text = "B11";
+            this.groupBox25.Text = "A26";
             // 
-            // p26
+            // A26
             // 
-            this.p26.Image = ((System.Drawing.Image)(resources.GetObject("p26.Image")));
-            this.p26.Location = new System.Drawing.Point(6, 21);
-            this.p26.Name = "p26";
-            this.p26.Size = new System.Drawing.Size(51, 41);
-            this.p26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p26.TabIndex = 0;
-            this.p26.TabStop = false;
-            this.p26.Tag = "b11";
-            this.p26.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A26.Image = ((System.Drawing.Image)(resources.GetObject("A26.Image")));
+            this.A26.Location = new System.Drawing.Point(6, 21);
+            this.A26.Name = "A26";
+            this.A26.Size = new System.Drawing.Size(51, 41);
+            this.A26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A26.TabIndex = 0;
+            this.A26.TabStop = false;
+            this.A26.Tag = "b11";
+            this.A26.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox26
             // 
             this.groupBox26.BackColor = System.Drawing.Color.Transparent;
             this.groupBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox26.Controls.Add(this.p19);
+            this.groupBox26.Controls.Add(this.A19);
             this.groupBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox26.Location = new System.Drawing.Point(290, 200);
             this.groupBox26.Name = "groupBox26";
             this.groupBox26.Size = new System.Drawing.Size(63, 74);
             this.groupBox26.TabIndex = 44;
             this.groupBox26.TabStop = false;
-            this.groupBox26.Text = "B4";
+            this.groupBox26.Text = "A19";
             // 
-            // p19
+            // A19
             // 
-            this.p19.Image = ((System.Drawing.Image)(resources.GetObject("p19.Image")));
-            this.p19.Location = new System.Drawing.Point(6, 21);
-            this.p19.Name = "p19";
-            this.p19.Size = new System.Drawing.Size(51, 41);
-            this.p19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p19.TabIndex = 0;
-            this.p19.TabStop = false;
-            this.p19.Tag = "b4";
-            this.p19.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A19.Image = ((System.Drawing.Image)(resources.GetObject("A19.Image")));
+            this.A19.Location = new System.Drawing.Point(6, 21);
+            this.A19.Name = "A19";
+            this.A19.Size = new System.Drawing.Size(51, 41);
+            this.A19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A19.TabIndex = 0;
+            this.A19.TabStop = false;
+            this.A19.Tag = "b4";
+            this.A19.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox27
             // 
             this.groupBox27.BackColor = System.Drawing.Color.Transparent;
             this.groupBox27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox27.Controls.Add(this.p22);
+            this.groupBox27.Controls.Add(this.A22);
             this.groupBox27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox27.Location = new System.Drawing.Point(290, 280);
             this.groupBox27.Name = "groupBox27";
             this.groupBox27.Size = new System.Drawing.Size(63, 74);
             this.groupBox27.TabIndex = 47;
             this.groupBox27.TabStop = false;
-            this.groupBox27.Text = "B7";
+            this.groupBox27.Text = "A22";
             // 
-            // p22
+            // A22
             // 
-            this.p22.Image = ((System.Drawing.Image)(resources.GetObject("p22.Image")));
-            this.p22.Location = new System.Drawing.Point(6, 21);
-            this.p22.Name = "p22";
-            this.p22.Size = new System.Drawing.Size(51, 41);
-            this.p22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p22.TabIndex = 0;
-            this.p22.TabStop = false;
-            this.p22.Tag = "b7";
-            this.p22.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A22.Image = ((System.Drawing.Image)(resources.GetObject("A22.Image")));
+            this.A22.Location = new System.Drawing.Point(6, 21);
+            this.A22.Name = "A22";
+            this.A22.Size = new System.Drawing.Size(51, 41);
+            this.A22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A22.TabIndex = 0;
+            this.A22.TabStop = false;
+            this.A22.Tag = "b7";
+            this.A22.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox28
             // 
             this.groupBox28.BackColor = System.Drawing.Color.Transparent;
             this.groupBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox28.Controls.Add(this.p17);
+            this.groupBox28.Controls.Add(this.A17);
             this.groupBox28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox28.Location = new System.Drawing.Point(359, 120);
             this.groupBox28.Name = "groupBox28";
             this.groupBox28.Size = new System.Drawing.Size(63, 74);
             this.groupBox28.TabIndex = 42;
             this.groupBox28.TabStop = false;
-            this.groupBox28.Text = "B2";
+            this.groupBox28.Text = "A17";
             // 
-            // p17
+            // A17
             // 
-            this.p17.Image = ((System.Drawing.Image)(resources.GetObject("p17.Image")));
-            this.p17.Location = new System.Drawing.Point(6, 21);
-            this.p17.Name = "p17";
-            this.p17.Size = new System.Drawing.Size(51, 41);
-            this.p17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p17.TabIndex = 0;
-            this.p17.TabStop = false;
-            this.p17.Tag = "b2";
-            this.p17.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A17.Image = ((System.Drawing.Image)(resources.GetObject("A17.Image")));
+            this.A17.Location = new System.Drawing.Point(6, 21);
+            this.A17.Name = "A17";
+            this.A17.Size = new System.Drawing.Size(51, 41);
+            this.A17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A17.TabIndex = 0;
+            this.A17.TabStop = false;
+            this.A17.Tag = "b2";
+            this.A17.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox29
             // 
             this.groupBox29.BackColor = System.Drawing.Color.Transparent;
             this.groupBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox29.Controls.Add(this.p25);
+            this.groupBox29.Controls.Add(this.A25);
             this.groupBox29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox29.Location = new System.Drawing.Point(290, 360);
             this.groupBox29.Name = "groupBox29";
             this.groupBox29.Size = new System.Drawing.Size(63, 74);
             this.groupBox29.TabIndex = 50;
             this.groupBox29.TabStop = false;
-            this.groupBox29.Text = "B10";
+            this.groupBox29.Text = "A25";
             // 
-            // p25
+            // A25
             // 
-            this.p25.Image = ((System.Drawing.Image)(resources.GetObject("p25.Image")));
-            this.p25.Location = new System.Drawing.Point(6, 21);
-            this.p25.Name = "p25";
-            this.p25.Size = new System.Drawing.Size(51, 41);
-            this.p25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p25.TabIndex = 0;
-            this.p25.TabStop = false;
-            this.p25.Tag = "b10";
-            this.p25.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A25.Image = ((System.Drawing.Image)(resources.GetObject("A25.Image")));
+            this.A25.Location = new System.Drawing.Point(6, 21);
+            this.A25.Name = "A25";
+            this.A25.Size = new System.Drawing.Size(51, 41);
+            this.A25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A25.TabIndex = 0;
+            this.A25.TabStop = false;
+            this.A25.Tag = "b10";
+            this.A25.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox30
             // 
             this.groupBox30.BackColor = System.Drawing.Color.Transparent;
             this.groupBox30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox30.Controls.Add(this.p16);
+            this.groupBox30.Controls.Add(this.A16);
             this.groupBox30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox30.Location = new System.Drawing.Point(290, 120);
             this.groupBox30.Name = "groupBox30";
             this.groupBox30.Size = new System.Drawing.Size(63, 74);
             this.groupBox30.TabIndex = 41;
             this.groupBox30.TabStop = false;
-            this.groupBox30.Text = "B1";
+            this.groupBox30.Text = "A16";
             // 
-            // p16
+            // A16
             // 
-            this.p16.Image = ((System.Drawing.Image)(resources.GetObject("p16.Image")));
-            this.p16.Location = new System.Drawing.Point(6, 21);
-            this.p16.Name = "p16";
-            this.p16.Size = new System.Drawing.Size(51, 41);
-            this.p16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p16.TabIndex = 0;
-            this.p16.TabStop = false;
-            this.p16.Tag = "b1";
-            this.p16.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A16.Image = ((System.Drawing.Image)(resources.GetObject("A16.Image")));
+            this.A16.Location = new System.Drawing.Point(6, 21);
+            this.A16.Name = "A16";
+            this.A16.Size = new System.Drawing.Size(51, 41);
+            this.A16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A16.TabIndex = 0;
+            this.A16.TabStop = false;
+            this.A16.Tag = "b1";
+            this.A16.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox13
             // 
             this.groupBox13.BackColor = System.Drawing.Color.Transparent;
             this.groupBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox13.Controls.Add(this.p15);
+            this.groupBox13.Controls.Add(this.A15);
             this.groupBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox13.Location = new System.Drawing.Point(162, 440);
             this.groupBox13.Name = "groupBox13";
@@ -1082,24 +1084,24 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "A15";
             // 
-            // p15
+            // A15
             // 
-            this.p15.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p15.Location = new System.Drawing.Point(6, 21);
-            this.p15.Name = "p15";
-            this.p15.Size = new System.Drawing.Size(51, 41);
-            this.p15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p15.TabIndex = 0;
-            this.p15.TabStop = false;
-            this.p15.Tag = "a15";
-            this.p15.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A15.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A15.Location = new System.Drawing.Point(6, 21);
+            this.A15.Name = "A15";
+            this.A15.Size = new System.Drawing.Size(51, 41);
+            this.A15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A15.TabIndex = 0;
+            this.A15.TabStop = false;
+            this.A15.Tag = "a15";
+            this.A15.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
             this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox7.Controls.Add(this.pictureBox1);
-            this.groupBox7.Controls.Add(this.p12);
+            this.groupBox7.Controls.Add(this.A12);
             this.groupBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox7.Location = new System.Drawing.Point(162, 360);
             this.groupBox7.Name = "groupBox7";
@@ -1119,23 +1121,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "a12";
             // 
-            // p12
+            // A12
             // 
-            this.p12.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p12.Location = new System.Drawing.Point(6, 21);
-            this.p12.Name = "p12";
-            this.p12.Size = new System.Drawing.Size(51, 41);
-            this.p12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p12.TabIndex = 0;
-            this.p12.TabStop = false;
-            this.p12.Tag = "a12";
-            this.p12.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A12.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A12.Location = new System.Drawing.Point(6, 21);
+            this.A12.Name = "A12";
+            this.A12.Size = new System.Drawing.Size(51, 41);
+            this.A12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A12.TabIndex = 0;
+            this.A12.TabStop = false;
+            this.A12.Tag = "a12";
+            this.A12.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox14
             // 
             this.groupBox14.BackColor = System.Drawing.Color.Transparent;
             this.groupBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox14.Controls.Add(this.p14);
+            this.groupBox14.Controls.Add(this.A14);
             this.groupBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox14.Location = new System.Drawing.Point(93, 440);
             this.groupBox14.Name = "groupBox14";
@@ -1144,23 +1146,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "A14";
             // 
-            // p14
+            // A14
             // 
-            this.p14.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p14.Location = new System.Drawing.Point(6, 21);
-            this.p14.Name = "p14";
-            this.p14.Size = new System.Drawing.Size(51, 41);
-            this.p14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p14.TabIndex = 0;
-            this.p14.TabStop = false;
-            this.p14.Tag = "a14";
-            this.p14.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A14.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A14.Location = new System.Drawing.Point(6, 21);
+            this.A14.Name = "A14";
+            this.A14.Size = new System.Drawing.Size(51, 41);
+            this.A14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A14.TabIndex = 0;
+            this.A14.TabStop = false;
+            this.A14.Tag = "a14";
+            this.A14.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox15
             // 
             this.groupBox15.BackColor = System.Drawing.Color.Transparent;
             this.groupBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox15.Controls.Add(this.p13);
+            this.groupBox15.Controls.Add(this.A13);
             this.groupBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox15.Location = new System.Drawing.Point(24, 440);
             this.groupBox15.Name = "groupBox15";
@@ -1169,23 +1171,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "A13";
             // 
-            // p13
+            // A13
             // 
-            this.p13.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p13.Location = new System.Drawing.Point(6, 21);
-            this.p13.Name = "p13";
-            this.p13.Size = new System.Drawing.Size(51, 41);
-            this.p13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p13.TabIndex = 0;
-            this.p13.TabStop = false;
-            this.p13.Tag = "a13";
-            this.p13.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A13.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A13.Location = new System.Drawing.Point(6, 21);
+            this.A13.Name = "A13";
+            this.A13.Size = new System.Drawing.Size(51, 41);
+            this.A13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A13.TabIndex = 0;
+            this.A13.TabStop = false;
+            this.A13.Tag = "a13";
+            this.A13.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox4.Controls.Add(this.p6);
+            this.groupBox4.Controls.Add(this.A6);
             this.groupBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox4.Location = new System.Drawing.Point(162, 200);
             this.groupBox4.Name = "groupBox4";
@@ -1194,23 +1196,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "A6";
             // 
-            // p6
+            // A6
             // 
-            this.p6.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p6.Location = new System.Drawing.Point(6, 21);
-            this.p6.Name = "p6";
-            this.p6.Size = new System.Drawing.Size(51, 41);
-            this.p6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p6.TabIndex = 0;
-            this.p6.TabStop = false;
-            this.p6.Tag = "a6";
-            this.p6.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A6.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A6.Location = new System.Drawing.Point(6, 21);
+            this.A6.Name = "A6";
+            this.A6.Size = new System.Drawing.Size(51, 41);
+            this.A6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A6.TabIndex = 0;
+            this.A6.TabStop = false;
+            this.A6.Tag = "a6";
+            this.A6.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox3.Controls.Add(this.p3);
+            this.groupBox3.Controls.Add(this.A3);
             this.groupBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox3.Location = new System.Drawing.Point(162, 120);
             this.groupBox3.Name = "groupBox3";
@@ -1219,23 +1221,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "A3";
             // 
-            // p3
+            // A3
             // 
-            this.p3.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p3.Location = new System.Drawing.Point(6, 21);
-            this.p3.Name = "p3";
-            this.p3.Size = new System.Drawing.Size(51, 41);
-            this.p3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p3.TabIndex = 0;
-            this.p3.TabStop = false;
-            this.p3.Tag = "a3";
-            this.p3.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A3.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A3.Location = new System.Drawing.Point(6, 21);
+            this.A3.Name = "A3";
+            this.A3.Size = new System.Drawing.Size(51, 41);
+            this.A3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A3.TabIndex = 0;
+            this.A3.TabStop = false;
+            this.A3.Tag = "a3";
+            this.A3.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.Transparent;
             this.groupBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox8.Controls.Add(this.p9);
+            this.groupBox8.Controls.Add(this.A9);
             this.groupBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox8.Location = new System.Drawing.Point(162, 280);
             this.groupBox8.Name = "groupBox8";
@@ -1244,23 +1246,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "A9";
             // 
-            // p9
+            // A9
             // 
-            this.p9.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p9.Location = new System.Drawing.Point(6, 21);
-            this.p9.Name = "p9";
-            this.p9.Size = new System.Drawing.Size(51, 41);
-            this.p9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p9.TabIndex = 0;
-            this.p9.TabStop = false;
-            this.p9.Tag = "a9";
-            this.p9.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A9.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A9.Location = new System.Drawing.Point(6, 21);
+            this.A9.Name = "A9";
+            this.A9.Size = new System.Drawing.Size(51, 41);
+            this.A9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A9.TabIndex = 0;
+            this.A9.TabStop = false;
+            this.A9.Tag = "a9";
+            this.A9.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox5.Controls.Add(this.p5);
+            this.groupBox5.Controls.Add(this.A5);
             this.groupBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox5.Location = new System.Drawing.Point(93, 200);
             this.groupBox5.Name = "groupBox5";
@@ -1269,23 +1271,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "A5";
             // 
-            // p5
+            // A5
             // 
-            this.p5.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p5.Location = new System.Drawing.Point(6, 21);
-            this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(51, 41);
-            this.p5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p5.TabIndex = 0;
-            this.p5.TabStop = false;
-            this.p5.Tag = "a5";
-            this.p5.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A5.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A5.Location = new System.Drawing.Point(6, 21);
+            this.A5.Name = "A5";
+            this.A5.Size = new System.Drawing.Size(51, 41);
+            this.A5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A5.TabIndex = 0;
+            this.A5.TabStop = false;
+            this.A5.Tag = "a5";
+            this.A5.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox11
             // 
             this.groupBox11.BackColor = System.Drawing.Color.Transparent;
             this.groupBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox11.Controls.Add(this.p8);
+            this.groupBox11.Controls.Add(this.A8);
             this.groupBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox11.Location = new System.Drawing.Point(93, 280);
             this.groupBox11.Name = "groupBox11";
@@ -1294,23 +1296,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "A8";
             // 
-            // p8
+            // A8
             // 
-            this.p8.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p8.Location = new System.Drawing.Point(6, 21);
-            this.p8.Name = "p8";
-            this.p8.Size = new System.Drawing.Size(51, 41);
-            this.p8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p8.TabIndex = 0;
-            this.p8.TabStop = false;
-            this.p8.Tag = "a8";
-            this.p8.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A8.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A8.Location = new System.Drawing.Point(6, 21);
+            this.A8.Name = "A8";
+            this.A8.Size = new System.Drawing.Size(51, 41);
+            this.A8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A8.TabIndex = 0;
+            this.A8.TabStop = false;
+            this.A8.Tag = "a8";
+            this.A8.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.Transparent;
             this.groupBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox9.Controls.Add(this.p11);
+            this.groupBox9.Controls.Add(this.A11);
             this.groupBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox9.Location = new System.Drawing.Point(93, 360);
             this.groupBox9.Name = "groupBox9";
@@ -1319,23 +1321,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "A11";
             // 
-            // p11
+            // A11
             // 
-            this.p11.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p11.Location = new System.Drawing.Point(6, 21);
-            this.p11.Name = "p11";
-            this.p11.Size = new System.Drawing.Size(51, 41);
-            this.p11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p11.TabIndex = 0;
-            this.p11.TabStop = false;
-            this.p11.Tag = "a11";
-            this.p11.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A11.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A11.Location = new System.Drawing.Point(6, 21);
+            this.A11.Name = "A11";
+            this.A11.Size = new System.Drawing.Size(51, 41);
+            this.A11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A11.TabIndex = 0;
+            this.A11.TabStop = false;
+            this.A11.Tag = "a11";
+            this.A11.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
             this.groupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox6.Controls.Add(this.p4);
+            this.groupBox6.Controls.Add(this.A4);
             this.groupBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox6.Location = new System.Drawing.Point(24, 200);
             this.groupBox6.Name = "groupBox6";
@@ -1344,23 +1346,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "A4";
             // 
-            // p4
+            // A4
             // 
-            this.p4.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p4.Location = new System.Drawing.Point(6, 21);
-            this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(51, 41);
-            this.p4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p4.TabIndex = 0;
-            this.p4.TabStop = false;
-            this.p4.Tag = "a4";
-            this.p4.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A4.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A4.Location = new System.Drawing.Point(6, 21);
+            this.A4.Name = "A4";
+            this.A4.Size = new System.Drawing.Size(51, 41);
+            this.A4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A4.TabIndex = 0;
+            this.A4.TabStop = false;
+            this.A4.Tag = "a4";
+            this.A4.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox12
             // 
             this.groupBox12.BackColor = System.Drawing.Color.Transparent;
             this.groupBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox12.Controls.Add(this.p7);
+            this.groupBox12.Controls.Add(this.A7);
             this.groupBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox12.Location = new System.Drawing.Point(24, 280);
             this.groupBox12.Name = "groupBox12";
@@ -1369,23 +1371,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "A7";
             // 
-            // p7
+            // A7
             // 
-            this.p7.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p7.Location = new System.Drawing.Point(6, 21);
-            this.p7.Name = "p7";
-            this.p7.Size = new System.Drawing.Size(51, 41);
-            this.p7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p7.TabIndex = 0;
-            this.p7.TabStop = false;
-            this.p7.Tag = "a7";
-            this.p7.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A7.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A7.Location = new System.Drawing.Point(6, 21);
+            this.A7.Name = "A7";
+            this.A7.Size = new System.Drawing.Size(51, 41);
+            this.A7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A7.TabIndex = 0;
+            this.A7.TabStop = false;
+            this.A7.Tag = "a7";
+            this.A7.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox2.Controls.Add(this.p2);
+            this.groupBox2.Controls.Add(this.A2);
             this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox2.Location = new System.Drawing.Point(93, 120);
             this.groupBox2.Name = "groupBox2";
@@ -1394,23 +1396,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "A2";
             // 
-            // p2
+            // A2
             // 
-            this.p2.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p2.Location = new System.Drawing.Point(6, 21);
-            this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(51, 41);
-            this.p2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p2.TabIndex = 0;
-            this.p2.TabStop = false;
-            this.p2.Tag = "a2";
-            this.p2.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A2.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A2.Location = new System.Drawing.Point(6, 21);
+            this.A2.Name = "A2";
+            this.A2.Size = new System.Drawing.Size(51, 41);
+            this.A2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A2.TabIndex = 0;
+            this.A2.TabStop = false;
+            this.A2.Tag = "a2";
+            this.A2.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox10
             // 
             this.groupBox10.BackColor = System.Drawing.Color.Transparent;
             this.groupBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox10.Controls.Add(this.p10);
+            this.groupBox10.Controls.Add(this.A10);
             this.groupBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox10.Location = new System.Drawing.Point(24, 360);
             this.groupBox10.Name = "groupBox10";
@@ -1419,23 +1421,23 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "A10";
             // 
-            // p10
+            // A10
             // 
-            this.p10.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p10.Location = new System.Drawing.Point(6, 21);
-            this.p10.Name = "p10";
-            this.p10.Size = new System.Drawing.Size(51, 41);
-            this.p10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p10.TabIndex = 0;
-            this.p10.TabStop = false;
-            this.p10.Tag = "a10";
-            this.p10.Click += new System.EventHandler(this.ChonGhe_Click);
+            this.A10.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A10.Location = new System.Drawing.Point(6, 21);
+            this.A10.Name = "A10";
+            this.A10.Size = new System.Drawing.Size(51, 41);
+            this.A10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A10.TabIndex = 0;
+            this.A10.TabStop = false;
+            this.A10.Tag = "a10";
+            this.A10.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox1.Controls.Add(this.p1);
+            this.groupBox1.Controls.Add(this.A1);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox1.Location = new System.Drawing.Point(24, 120);
             this.groupBox1.Name = "groupBox1";
@@ -1444,27 +1446,17 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "A1";
             // 
-            // p1
+            // A1
             // 
-            this.p1.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
-            this.p1.Location = new System.Drawing.Point(6, 21);
-            this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(51, 41);
-            this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.p1.TabIndex = 0;
-            this.p1.TabStop = false;
-            this.p1.Tag = "a1";
-            this.p1.Click += new System.EventHandler(this.ChonGhe_Click);
-            // 
-            // lboxSoGheChon
-            // 
-            this.lboxSoGheChon.BackColor = System.Drawing.SystemColors.Control;
-            this.lboxSoGheChon.FormattingEnabled = true;
-            this.lboxSoGheChon.ItemHeight = 16;
-            this.lboxSoGheChon.Location = new System.Drawing.Point(12, 697);
-            this.lboxSoGheChon.Name = "lboxSoGheChon";
-            this.lboxSoGheChon.Size = new System.Drawing.Size(10, 4);
-            this.lboxSoGheChon.TabIndex = 56;
+            this.A1.Image = global::GiuaKy_AppDatVeXe.Properties.Resources.seat1;
+            this.A1.Location = new System.Drawing.Point(6, 21);
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(51, 41);
+            this.A1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.A1.TabIndex = 0;
+            this.A1.TabStop = false;
+            this.A1.Tag = "a1";
+            this.A1.Click += new System.EventHandler(this.ChonGhe_Click);
             // 
             // BanVe
             // 
@@ -1485,66 +1477,66 @@ namespace GiuaKy_AppDatVeXe.Views
             this.panelSoDoGhe.ResumeLayout(false);
             this.panelSoDoGhe.PerformLayout();
             this.groupBox16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A30)).EndInit();
             this.groupBox17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A27)).EndInit();
             this.groupBox18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A29)).EndInit();
             this.groupBox19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A28)).EndInit();
             this.groupBox20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A21)).EndInit();
             this.groupBox21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A18)).EndInit();
             this.groupBox22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A24)).EndInit();
             this.groupBox23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A20)).EndInit();
             this.groupBox24.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A23)).EndInit();
             this.groupBox25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A26)).EndInit();
             this.groupBox26.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A19)).EndInit();
             this.groupBox27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A22)).EndInit();
             this.groupBox28.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A17)).EndInit();
             this.groupBox29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A25)).EndInit();
             this.groupBox30.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A16)).EndInit();
             this.groupBox13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A15)).EndInit();
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A12)).EndInit();
             this.groupBox14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A14)).EndInit();
             this.groupBox15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A13)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A6)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A3)).EndInit();
             this.groupBox8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A9)).EndInit();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A5)).EndInit();
             this.groupBox11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A8)).EndInit();
             this.groupBox9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A11)).EndInit();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A4)).EndInit();
             this.groupBox12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A7)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A2)).EndInit();
             this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A10)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1590,69 +1582,69 @@ namespace GiuaKy_AppDatVeXe.Views
         private System.Windows.Forms.Label label6;
         internal System.Windows.Forms.Panel panelSoDoGhe;
         private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.PictureBox p30;
+        private System.Windows.Forms.PictureBox A30;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.PictureBox p27;
+        private System.Windows.Forms.PictureBox A27;
         private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.PictureBox p29;
+        private System.Windows.Forms.PictureBox A29;
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.PictureBox p28;
+        private System.Windows.Forms.PictureBox A28;
         private System.Windows.Forms.GroupBox groupBox20;
-        private System.Windows.Forms.PictureBox p21;
+        private System.Windows.Forms.PictureBox A21;
         private System.Windows.Forms.GroupBox groupBox21;
-        private System.Windows.Forms.PictureBox p18;
+        private System.Windows.Forms.PictureBox A18;
         private System.Windows.Forms.GroupBox groupBox22;
-        private System.Windows.Forms.PictureBox p24;
+        private System.Windows.Forms.PictureBox A24;
         private System.Windows.Forms.GroupBox groupBox23;
-        private System.Windows.Forms.PictureBox p20;
+        private System.Windows.Forms.PictureBox A20;
         private System.Windows.Forms.GroupBox groupBox24;
-        private System.Windows.Forms.PictureBox p23;
+        private System.Windows.Forms.PictureBox A23;
         private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.PictureBox p26;
+        private System.Windows.Forms.PictureBox A26;
         private System.Windows.Forms.GroupBox groupBox26;
-        private System.Windows.Forms.PictureBox p19;
+        private System.Windows.Forms.PictureBox A19;
         private System.Windows.Forms.GroupBox groupBox27;
-        private System.Windows.Forms.PictureBox p22;
+        private System.Windows.Forms.PictureBox A22;
         private System.Windows.Forms.GroupBox groupBox28;
-        private System.Windows.Forms.PictureBox p17;
+        private System.Windows.Forms.PictureBox A17;
         private System.Windows.Forms.GroupBox groupBox29;
-        private System.Windows.Forms.PictureBox p25;
+        private System.Windows.Forms.PictureBox A25;
         private System.Windows.Forms.GroupBox groupBox30;
-        private System.Windows.Forms.PictureBox p16;
+        private System.Windows.Forms.PictureBox A16;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.PictureBox p15;
+        private System.Windows.Forms.PictureBox A15;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox p12;
+        private System.Windows.Forms.PictureBox A12;
         private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.PictureBox p14;
+        private System.Windows.Forms.PictureBox A14;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.PictureBox p13;
+        private System.Windows.Forms.PictureBox A13;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.PictureBox p6;
+        private System.Windows.Forms.PictureBox A6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.PictureBox p3;
+        private System.Windows.Forms.PictureBox A3;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.PictureBox p9;
+        private System.Windows.Forms.PictureBox A9;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.PictureBox p5;
+        private System.Windows.Forms.PictureBox A5;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.PictureBox p8;
+        private System.Windows.Forms.PictureBox A8;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.PictureBox p11;
+        private System.Windows.Forms.PictureBox A11;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.PictureBox p4;
+        private System.Windows.Forms.PictureBox A4;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.PictureBox p7;
+        private System.Windows.Forms.PictureBox A7;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox p2;
+        private System.Windows.Forms.PictureBox A2;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.PictureBox p10;
+        private System.Windows.Forms.PictureBox A10;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox p1;
+        private System.Windows.Forms.PictureBox A1;
         private System.Windows.Forms.GroupBox groupBox31;
         private System.Windows.Forms.GroupBox groupBox32;
         private System.Windows.Forms.Label lbSoGhe;
-        private System.Windows.Forms.ListBox lboxSoGheChon;
+        
     }
 }

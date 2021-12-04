@@ -67,5 +67,19 @@ namespace GiuaKy_AppDatVeXe.Models
             }
             return ves;
         }
+        public Ve getVeByMaLT(int maLT)
+        {
+            var ve = db.Ves.Where(lt => lt.MaLT == maLT).FirstOrDefault<Ve>(); 
+            if (ve == null)
+                return null;
+            return ve;
+        }
+        public int insert(Ve ve)
+        {
+            //var query = from kh in db.Ves select kh;
+            db.Ves.Add(ve);
+            return db.SaveChanges();
+        }
+
     }
 }

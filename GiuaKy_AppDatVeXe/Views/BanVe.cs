@@ -24,7 +24,8 @@ namespace GiuaKy_AppDatVeXe.Views
         {
             InitializeComponent();
             banVeDAO = new BanVeDAO();
-            hienThiThongTinVe();
+            btnLichTrinh.Enabled = false;
+            panelSoDoGhe.Enabled = false;
         }
 
         public void hienThiDiemDi(DateTime ngayDi)
@@ -79,7 +80,7 @@ namespace GiuaKy_AppDatVeXe.Views
             hienThiDiemDen(ngayDi);
             hienThiGioDi(ngayDi);
         }
-       
+        public ListBox lboxSoGheChon = new ListBox();
         private void ChonGhe_Click(object sender, EventArgs e)
         {
             
@@ -88,23 +89,41 @@ namespace GiuaKy_AppDatVeXe.Views
             {
                 p.Image = img1;
                 lboxSoGheChon.Items.Remove(p.Name);
+                hienThiThongTinVe();
             }
             else
             {
                 p.Image = img3;
                 lboxSoGheChon.Items.Add(p.Name);
+                hienThiThongTinVe();
             }
            
         }
         //Hien thi thong tin ve
         private void hienThiThongTinVe()
         {
+            string chuyen = cbDiemDi.Text + '-' + cbDiemDen.Text;
+            string thoigian = dtpNgayDi.Text + ' ' + cbGioDi.Text;
+            int count = 0;
             string ghe = "";
+            string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
+            string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
+            string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
+            DateTime ngayDi = dtpNgayDi.Value.Date;
+            LichTrinh dsLichTrinh =  banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
+            //Ve ves = banVeDAO.getVeByMaLT(dsLichTrinh.MaLT);
             foreach (var item in lboxSoGheChon.Items)
             {
                 ghe += item.ToString() + " ";
+                count++;
+
             }
             lbSoGhe.Text = ghe;
+            lbChuyen.Text = chuyen;
+            lbThoiGian.Text = thoigian;
+            lbSoLuong.Text = count.ToString();
+            lbGiaVe.Text = dsLichTrinh.GiaTien.ToString();
+            lbTongTien.Text = (count * dsLichTrinh.GiaTien).ToString();
         }
         //Lấy thông tin Picturebox
         private List<PictureBox> danhsachPictureBox()
@@ -113,7 +132,7 @@ namespace GiuaKy_AppDatVeXe.Views
             Control[] matches;
             for (int i = 1; i <= 30; i++)
             {
-                matches = this.Controls.Find("p" + i.ToString(), true);
+                matches = this.Controls.Find("A" + i.ToString(), true);
                 if (matches.Length > 0 && matches[0] is PictureBox)
                 {
                     pictureBoxes.Add((PictureBox)matches[0]);
@@ -161,8 +180,20 @@ namespace GiuaKy_AppDatVeXe.Views
             {
                 MessageBox.Show("Không có chuyến này! Bạn vui lòng tìm chuyến khác nhé", "Lịch trình không tồn tại", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            panelSoDoGhe.Enabled = true;
         }
 
-       
+        private void cbGioDi_TextChanged(object sender, EventArgs e)
+        {
+            btnLichTrinh.Enabled = true;
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            string hoTen = txtHoTen.Text;
+            string sdt = txtSdt.Text;
+            
+            
+        }
     }
 }
