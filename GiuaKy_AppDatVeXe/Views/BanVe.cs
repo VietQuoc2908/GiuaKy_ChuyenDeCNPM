@@ -19,7 +19,6 @@ namespace GiuaKy_AppDatVeXe.Views
         Bitmap img2 = Properties.Resources.seat2;
         Bitmap img3 = Properties.Resources.seat3;
 
-        private PictureBox p = new PictureBox();
 
         public BanVe()
         {
@@ -84,10 +83,22 @@ namespace GiuaKy_AppDatVeXe.Views
         {
             PictureBox p = (PictureBox)sender;
             p.Image = img3;
-
-
         }
 
+        private List<PictureBox> danhsachPictureBox()
+        {
+            List<PictureBox> pictureBoxes = new List<PictureBox>();
+            Control[] matches;
+            for (int i = 1; i <= 100; i++)
+            {
+                matches = this.Controls.Find("p" + i.ToString(), true);
+                if (matches.Length > 0 && matches[0] is PictureBox)
+                {
+                    pictureBoxes.Add((PictureBox)matches[0]);
+                }
+            }
+            return pictureBoxes;
+        }
         private void btnLichTrinh_Click(object sender, EventArgs e)
         {
             string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
@@ -99,17 +110,27 @@ namespace GiuaKy_AppDatVeXe.Views
 
             if (dsLichTrinh != null)
             {
+
+                List<PictureBox> pictureBoxes = danhsachPictureBox();
                 List<Ve> dsVe = banVeDAO.getVebyMaLT(dsLichTrinh.MaLT);
                 foreach (Ve ve in dsVe)
                 {
-                    p.Tag = ve.MaGhe;
                     if (ve.TrangThai == 1)
                     {
-                        p.Image = img2;
+                       foreach(var item in pictureBoxes)
+                        {
+                           if(item.Name == ve.MaGhe)
+                            {
+                                item.Image = img2;
+                            }
+                        }
                     }
                     else
                     {
-                        p.Image = img1;
+                        foreach (var item in pictureBoxes)
+                        {
+                            item.Image = img1;
+                        }
                     }
                 }
             }
