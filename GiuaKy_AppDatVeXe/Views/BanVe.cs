@@ -79,6 +79,8 @@ namespace GiuaKy_AppDatVeXe.Views
             hienThiDiemDi(ngayDi);
             hienThiDiemDen(ngayDi);
             hienThiGioDi(ngayDi);
+            btnLichTrinh.Enabled = true;
+            
         }
         public ListBox lboxSoGheChon = new ListBox();
         private void ChonGhe_Click(object sender, EventArgs e)
@@ -140,7 +142,6 @@ namespace GiuaKy_AppDatVeXe.Views
             }
             return pictureBoxes;
         }
-
         private void btnLichTrinh_Click(object sender, EventArgs e)
         {
             string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
@@ -151,7 +152,7 @@ namespace GiuaKy_AppDatVeXe.Views
             dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
 
             if (dsLichTrinh != null)
-            {
+            {  
                 List<PictureBox> pictureBoxes = danhsachPictureBox();
                 List<Ve> dsVe = banVeDAO.getVebyMaLT(dsLichTrinh.MaLT);
                 foreach (Ve ve in dsVe)
@@ -164,6 +165,7 @@ namespace GiuaKy_AppDatVeXe.Views
                             {
                                 item.Image = img2;
                                 item.Enabled = false;
+                               
                             }     
                         }
                     }
@@ -175,12 +177,14 @@ namespace GiuaKy_AppDatVeXe.Views
                         }
                     }
                 }
+                panelSoDoGhe.Enabled = true;
             }
             else
             {
                 MessageBox.Show("Không có chuyến này! Bạn vui lòng tìm chuyến khác nhé", "Lịch trình không tồn tại", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                panelSoDoGhe.Enabled = false;
             }
-            panelSoDoGhe.Enabled = true;
+           
         }
 
         private void cbGioDi_TextChanged(object sender, EventArgs e)
@@ -196,8 +200,7 @@ namespace GiuaKy_AppDatVeXe.Views
             string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
             string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
             DateTime ngayDi = dtpNgayDi.Value.Date;
-            LichTrinh dsLichTrinh = new LichTrinh();
-            dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
+            LichTrinh dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
             int maLT = dsLichTrinh.MaLT;
             int trangThai = 1;
             Decimal giaVe = dsLichTrinh.GiaTien;
