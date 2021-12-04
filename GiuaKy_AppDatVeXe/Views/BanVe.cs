@@ -14,20 +14,29 @@ namespace GiuaKy_AppDatVeXe.Views
     public partial class BanVe : UserControl
     {
         private BanVeDAO banVeDAO;
-
+        private KhachHangDAO khachHangDAO;
         Bitmap img1 = Properties.Resources.seat1;
         Bitmap img2 = Properties.Resources.seat2;
         Bitmap img3 = Properties.Resources.seat3;
         //private PictureBox p = new PictureBox();
-
         public BanVe()
         {
             InitializeComponent();
             banVeDAO = new BanVeDAO();
+            khachHangDAO = new KhachHangDAO();
             btnLichTrinh.Enabled = false;
             panelSoDoGhe.Enabled = false;
+            btnThanhToan.Enabled = false;
+            gbXacthuc.Enabled = false;
         }
-
+        public void clearThongTin()
+        {
+            lbSoGhe.Text = "";
+            lbChuyen.Text = "";
+            lbTongTien.Text = "";
+            lbGiaVe.Text = "";
+            lbThoiGian.Text = "";
+        }
         public void hienThiDiemDi(DateTime ngayDi)
         {
             List<LichTrinh> dsDiemDi = banVeDAO.getLichTrinhByNgayDi(ngayDi);
@@ -80,18 +89,17 @@ namespace GiuaKy_AppDatVeXe.Views
             hienThiDiemDen(ngayDi);
             hienThiGioDi(ngayDi);
             btnLichTrinh.Enabled = true;
-            
         }
         public ListBox lboxSoGheChon = new ListBox();
         private void ChonGhe_Click(object sender, EventArgs e)
         {
-            
             PictureBox p = (PictureBox)sender;
             if(p.Image == img3) 
             {
-                p.Image = img1;
+                p.Image = img1;               
                 lboxSoGheChon.Items.Remove(p.Name);
                 hienThiThongTinVe();
+               
             }
             else
             {
@@ -99,7 +107,7 @@ namespace GiuaKy_AppDatVeXe.Views
                 lboxSoGheChon.Items.Add(p.Name);
                 hienThiThongTinVe();
             }
-           
+            gbXacthuc.Enabled = true;
         }
         //Hien thi thong tin ve
         private void hienThiThongTinVe()
@@ -127,6 +135,7 @@ namespace GiuaKy_AppDatVeXe.Views
             lbGiaVe.Text = dsLichTrinh.GiaTien.ToString();
             lbTongTien.Text = (count * dsLichTrinh.GiaTien).ToString();
         }
+        
         //Lấy thông tin Picturebox
         private List<PictureBox> danhsachPictureBox()
         {
@@ -142,38 +151,42 @@ namespace GiuaKy_AppDatVeXe.Views
             }
             return pictureBoxes;
         }
-        private void btnLichTrinh_Click(object sender, EventArgs e)
+        private void loadLichTrinh()
         {
+            List<PictureBox> pictureBoxes = danhsachPictureBox();
+            foreach (var item in pictureBoxes)
+            {
+                item.Refresh();
+            }
             string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
             string diemDen = cbDiemDen.GetItemText(cbDiemDen.SelectedItem);
             string gioDi = cbGioDi.GetItemText(cbGioDi.SelectedItem);
             DateTime ngayDi = dtpNgayDi.Value.Date;
-            LichTrinh dsLichTrinh = new LichTrinh();
-            dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
+            LichTrinh dsLichTrinh = banVeDAO.timLichTrinh(diemDi, diemDen, gioDi, ngayDi);
 
             if (dsLichTrinh != null)
-            {  
-                List<PictureBox> pictureBoxes = danhsachPictureBox();
+            {
                 List<Ve> dsVe = banVeDAO.getVebyMaLT(dsLichTrinh.MaLT);
                 foreach (Ve ve in dsVe)
                 {
+
                     if (ve.TrangThai == 1)
                     {
                         foreach (var item in pictureBoxes)
                         {
-                            if (item.Name == ve.MaGhe) 
+                            if (item.Name == ve.MaGhe)
                             {
                                 item.Image = img2;
                                 item.Enabled = false;
-                               
-                            }     
+                            }
                         }
                     }
                     else
                     {
                         foreach (var item in pictureBoxes)
                         {
-                                item.Image = img1;
+
+                            item.Image = img1;
                         }
                     }
                 }
@@ -182,11 +195,15 @@ namespace GiuaKy_AppDatVeXe.Views
             else
             {
                 MessageBox.Show("Không có chuyến này! Bạn vui lòng tìm chuyến khác nhé", "Lịch trình không tồn tại", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                lboxSoGheChon.ClearSelected();
                 panelSoDoGhe.Enabled = false;
             }
-           
         }
+        private void btnLichTrinh_Click(object sender, EventArgs e)
+        {
 
+            loadLichTrinh();
+        }
         private void cbGioDi_TextChanged(object sender, EventArgs e)
         {
             btnLichTrinh.Enabled = true;
@@ -204,6 +221,8 @@ namespace GiuaKy_AppDatVeXe.Views
             int maLT = dsLichTrinh.MaLT;
             int trangThai = 1;
             Decimal giaVe = dsLichTrinh.GiaTien;
+            int count = 0;
+            
 
             foreach (string item in lboxSoGheChon.Items)
             {
@@ -214,8 +233,31 @@ namespace GiuaKy_AppDatVeXe.Views
                 ve.TrangThai = trangThai;
                 ve.GioDi = gioDi;
                 ve.GiaVe = giaVe;
-                banVeDAO.insert(ve);
+                int taoVe = banVeDAO.insert(ve);
+                if (taoVe>0)
+                {
+                    count++;
+                }
             }
+            if (count == 0)
+            {
+                MessageBox.Show("Đặt không thành công \n Vui lòng chọn vé!!", "Đặt vé", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                loadLichTrinh();
+                clearThongTin();
+                lbSoLuong.Text = "";
+                lboxSoGheChon.Items.Clear();
+                MessageBox.Show("Thanh Toán Thành Công \nBạn đã đặt thành công " + count + " vé", "Đặt vé", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } 
+        }
+        private void txtHoTen_TextChanged(object sender, EventArgs e)
+        {
+            if (txtHoTen.Text.Length == 0 || txtSdt.Text.Length == 0)
+                btnThanhToan.Enabled = false;
+            else
+                btnThanhToan.Enabled = true;
         }
     }
 }

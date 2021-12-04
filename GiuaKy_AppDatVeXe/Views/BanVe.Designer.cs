@@ -61,7 +61,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.panelThongTin = new System.Windows.Forms.Panel();
             this.groupBox31 = new System.Windows.Forms.GroupBox();
             this.lbSoGhe = new System.Windows.Forms.Label();
-            this.groupBox32 = new System.Windows.Forms.GroupBox();
+            this.gbXacthuc = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -136,7 +136,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.panelLichTrinh.SuspendLayout();
             this.panelThongTin.SuspendLayout();
             this.groupBox31.SuspendLayout();
-            this.groupBox32.SuspendLayout();
+            this.gbXacthuc.SuspendLayout();
             this.panelSoDoGhe.SuspendLayout();
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.A30)).BeginInit();
@@ -424,6 +424,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(313, 27);
             this.txtHoTen.TabIndex = 49;
+            this.txtHoTen.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // label20
             // 
@@ -444,6 +445,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.txtSdt.Name = "txtSdt";
             this.txtSdt.Size = new System.Drawing.Size(313, 27);
             this.txtSdt.TabIndex = 51;
+            this.txtSdt.TextChanged += new System.EventHandler(this.txtHoTen_TextChanged);
             // 
             // lbChuyen
             // 
@@ -508,7 +510,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.panelThongTin.BackColor = System.Drawing.Color.LightGray;
             this.panelThongTin.Controls.Add(this.label12);
             this.panelThongTin.Controls.Add(this.groupBox31);
-            this.panelThongTin.Controls.Add(this.groupBox32);
+            this.panelThongTin.Controls.Add(this.gbXacthuc);
             this.panelThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongTin.Location = new System.Drawing.Point(521, 227);
             this.panelThongTin.Name = "panelThongTin";
@@ -545,20 +547,20 @@ namespace GiuaKy_AppDatVeXe.Views
             this.lbSoGhe.Size = new System.Drawing.Size(317, 22);
             this.lbSoGhe.TabIndex = 54;
             // 
-            // groupBox32
+            // gbXacthuc
             // 
-            this.groupBox32.Controls.Add(this.btnThanhToan);
-            this.groupBox32.Controls.Add(this.txtHoTen);
-            this.groupBox32.Controls.Add(this.txtSdt);
-            this.groupBox32.Controls.Add(this.label19);
-            this.groupBox32.Controls.Add(this.label20);
-            this.groupBox32.Font = new System.Drawing.Font("Minion Pro", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox32.Location = new System.Drawing.Point(27, 266);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Size = new System.Drawing.Size(482, 157);
-            this.groupBox32.TabIndex = 62;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "Xác nhận thông tin";
+            this.gbXacthuc.Controls.Add(this.btnThanhToan);
+            this.gbXacthuc.Controls.Add(this.txtHoTen);
+            this.gbXacthuc.Controls.Add(this.txtSdt);
+            this.gbXacthuc.Controls.Add(this.label19);
+            this.gbXacthuc.Controls.Add(this.label20);
+            this.gbXacthuc.Font = new System.Drawing.Font("Minion Pro", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbXacthuc.Location = new System.Drawing.Point(27, 266);
+            this.gbXacthuc.Name = "gbXacthuc";
+            this.gbXacthuc.Size = new System.Drawing.Size(482, 157);
+            this.gbXacthuc.TabIndex = 62;
+            this.gbXacthuc.TabStop = false;
+            this.gbXacthuc.Text = "Xác nhận thông tin";
             // 
             // label1
             // 
@@ -1472,8 +1474,8 @@ namespace GiuaKy_AppDatVeXe.Views
             this.panelThongTin.ResumeLayout(false);
             this.panelThongTin.PerformLayout();
             this.groupBox31.ResumeLayout(false);
-            this.groupBox32.ResumeLayout(false);
-            this.groupBox32.PerformLayout();
+            this.gbXacthuc.ResumeLayout(false);
+            this.gbXacthuc.PerformLayout();
             this.panelSoDoGhe.ResumeLayout(false);
             this.panelSoDoGhe.PerformLayout();
             this.groupBox16.ResumeLayout(false);
@@ -1643,7 +1645,7 @@ namespace GiuaKy_AppDatVeXe.Views
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox A1;
         private System.Windows.Forms.GroupBox groupBox31;
-        private System.Windows.Forms.GroupBox groupBox32;
+        private System.Windows.Forms.GroupBox gbXacthuc;
         private System.Windows.Forms.Label lbSoGhe;
         
     }
