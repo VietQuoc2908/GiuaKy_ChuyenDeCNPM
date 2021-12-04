@@ -74,6 +74,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatVeXeKhachModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\DoanhThuDAO.cs" />
     <Compile Include="Models\InVeDAO.cs" />
     <Compile Include="Models\KhachHang.cs">
       <DependentUpon>DatVeXeKhachModel.tt</DependentUpon>

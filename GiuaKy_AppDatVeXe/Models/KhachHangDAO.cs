@@ -140,10 +140,6 @@ namespace GiuaKy_AppDatVeXe.Models
         {
             var SDT = db.KhachHangs.FirstOrDefault(kh => kh.Sdt == sdt);
             return SDT;
-            //var SDT = db.KhachHangs.Where(lt => lt.Sdt == sdt).FirstOrDefault<KhachHang>();
-            //if (SDT == null)
-            //    return null;
-            //return SDT;
         }
     }
 }

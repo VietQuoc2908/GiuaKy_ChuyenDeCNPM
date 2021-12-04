@@ -30,9 +30,9 @@ namespace GiuaKy_AppDatVeXe.Views
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSoGhe = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtSdt = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -49,12 +49,12 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtSoGhe);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtSdt);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(65, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(922, 111);
@@ -62,37 +62,40 @@ namespace GiuaKy_AppDatVeXe.Views
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin vé";
             // 
-            // textBox1
+            // txtSoGhe
             // 
-            this.textBox1.Location = new System.Drawing.Point(604, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 31);
-            this.textBox1.TabIndex = 57;
+            this.txtSoGhe.Location = new System.Drawing.Point(604, 43);
+            this.txtSoGhe.Name = "txtSoGhe";
+            this.txtSoGhe.Size = new System.Drawing.Size(230, 30);
+            this.txtSoGhe.TabIndex = 57;
+            this.txtSoGhe.TextChanged += new System.EventHandler(this.txtSdt_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Minion Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(495, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 24);
+            this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 56;
             this.label1.Text = "Số Ghế:";
             // 
-            // textBox8
+            // txtSdt
             // 
-            this.textBox8.Location = new System.Drawing.Point(217, 44);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(230, 31);
-            this.textBox8.TabIndex = 55;
+            this.txtSdt.Location = new System.Drawing.Point(217, 44);
+            this.txtSdt.Name = "txtSdt";
+            this.txtSdt.ReadOnly = true;
+            this.txtSdt.Size = new System.Drawing.Size(230, 30);
+            this.txtSdt.TabIndex = 55;
+            this.txtSdt.TextChanged += new System.EventHandler(this.txtSdt_TextChanged);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Minion Pro", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(60, 49);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 24);
+            this.label20.Size = new System.Drawing.Size(125, 20);
             this.label20.TabIndex = 54;
             this.label20.Text = "Số điện thoại:";
             // 
@@ -106,11 +109,12 @@ namespace GiuaKy_AppDatVeXe.Views
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(919, 281);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(70, 232);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(919, 331);
@@ -138,6 +142,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -146,6 +151,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(319, 34);
             this.txtTimKiem.TabIndex = 55;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // btnReset
             // 
@@ -155,6 +161,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnReset.TabIndex = 58;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSua
             // 
@@ -164,6 +171,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnSua.TabIndex = 57;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -173,6 +181,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnXoa.TabIndex = 56;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // InVe
             // 
@@ -189,6 +198,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.Controls.Add(this.groupBox2);
             this.Name = "InVe";
             this.Size = new System.Drawing.Size(1058, 650);
+            this.Load += new System.EventHandler(this.InVe_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -200,9 +210,9 @@ namespace GiuaKy_AppDatVeXe.Views
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSoGhe;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtSdt;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
