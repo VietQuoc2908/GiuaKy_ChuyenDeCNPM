@@ -104,6 +104,19 @@ namespace GiuaKy_AppDatVeXe.Models
             return db.SaveChanges();
         }
 
+        public Boolean compareSdt(string sdt)
+        {
+            var query = from kh in db.KhachHangs select kh.Sdt;
+            foreach (var item in query)
+            {
+                if (sdt.Equals(item))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
         public int delete(KhachHang khachHang)
         {
             var oldKhachHang = db.KhachHangs.FirstOrDefault(kh => kh.Sdt == khachHang.Sdt);

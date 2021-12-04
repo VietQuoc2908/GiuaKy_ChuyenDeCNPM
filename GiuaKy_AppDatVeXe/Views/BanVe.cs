@@ -222,7 +222,16 @@ namespace GiuaKy_AppDatVeXe.Views
             int trangThai = 1;
             Decimal giaVe = dsLichTrinh.GiaTien;
             int count = 0;
-            
+
+            if (khachHangDAO.compareSdt(sdt))
+            {
+                Models.KhachHang newKhachHang = new Models.KhachHang();
+                newKhachHang.Sdt = sdt;
+                newKhachHang.HoTen = hoTen;
+                newKhachHang.DiaChi = "";
+
+                khachHangDAO.insert(newKhachHang);
+            }
 
             foreach (string item in lboxSoGheChon.Items)
             {
