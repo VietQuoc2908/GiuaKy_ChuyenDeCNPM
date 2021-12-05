@@ -64,6 +64,8 @@ namespace GiuaKy_AppDatVeXe.Views
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            txtSdt.Text = "";
+            txtSoGhe.Text = "";
             string value = txtTimKiem.Text;
             if (!string.IsNullOrEmpty(value))
             {
@@ -146,6 +148,12 @@ namespace GiuaKy_AppDatVeXe.Views
             }
             else
                 MessageBox.Show("Ghế này đã được đặt. Vui lòng chọn ghế khác.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InvoiceVe invoice = new InvoiceVe();
+            invoice.ShowDialog();
         }
     }
 }

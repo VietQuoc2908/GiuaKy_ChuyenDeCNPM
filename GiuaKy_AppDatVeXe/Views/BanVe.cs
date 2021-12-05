@@ -36,6 +36,8 @@ namespace GiuaKy_AppDatVeXe.Views
             lbTongTien.Text = "";
             lbGiaVe.Text = "";
             lbThoiGian.Text = "";
+            txtHoTen.Text = "";
+            txtSdt.Text = "";
         }
         public void hienThiDiemDi(DateTime ngayDi)
         {
@@ -132,10 +134,9 @@ namespace GiuaKy_AppDatVeXe.Views
             lbChuyen.Text = chuyen;
             lbThoiGian.Text = thoigian;
             lbSoLuong.Text = count.ToString();
-            lbGiaVe.Text = dsLichTrinh.GiaTien.ToString();
-            lbTongTien.Text = (count * dsLichTrinh.GiaTien).ToString();
+            lbGiaVe.Text = string.Format("{0:0,0} VNĐ", dsLichTrinh.GiaTien);
+            lbTongTien.Text = string.Format("{0:0,0} VNĐ", (count * dsLichTrinh.GiaTien));
         }
-        
         //Lấy thông tin Picturebox
         private List<PictureBox> danhsachPictureBox()
         {
@@ -255,10 +256,22 @@ namespace GiuaKy_AppDatVeXe.Views
             else
             {
                 loadLichTrinh();
-                clearThongTin();
-                lbSoLuong.Text = "";
-                lboxSoGheChon.Items.Clear();
-                MessageBox.Show("Thanh Toán Thành Công \nBạn đã đặt thành công " + count + " vé", "Đặt vé", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show("Thanh toán thành công \n Bạn có muốn in vé không?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (res == DialogResult.OK)
+                {
+                    InvoiceVe invoice = new InvoiceVe();
+                    invoice.ShowDialog();
+                    clearThongTin();
+                    lbSoLuong.Text = "";
+                    lboxSoGheChon.Items.Clear();
+                }
+                if (res == DialogResult.Cancel)
+                {
+                    MessageBox.Show("Thanh Toán Thành Công \nBạn đã đặt thành công " + count + " vé", "Đặt vé", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    clearThongTin();
+                    lbSoLuong.Text = "";
+                    lboxSoGheChon.Items.Clear();
+                }
             } 
         }
         private void txtHoTen_TextChanged(object sender, EventArgs e)

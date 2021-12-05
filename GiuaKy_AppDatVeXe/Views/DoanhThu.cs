@@ -30,8 +30,8 @@ namespace GiuaKy_AppDatVeXe.Views
         private void DoanhThu_Load(object sender, EventArgs e)
         {
             showAll();
+           
         }
-
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             DateTime ngayBatDau = dtpNgayBatDau.Value.Date;
@@ -40,6 +40,7 @@ namespace GiuaKy_AppDatVeXe.Views
             DataTable table = doanhThuDAO.getVeByNgay(ngayBatDau, ngayKetThuc);
             dataGridView1.DataSource = table;
             txtDoanhThu.Text = string.Format("{0:0,0} VNĐ", tinhTongDoanhThu());
+            
         }
 
         private decimal tinhTongDoanhThu()

@@ -52,6 +52,9 @@ namespace GiuaKy_AppDatVeXe.Views
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            txtSdt.Text = "";
+            txtHoTen.Text = "";
+            txtDiaChi.Text = "";
             string value = txtTimKiem.Text;
             if (!string.IsNullOrEmpty(value))
             {
