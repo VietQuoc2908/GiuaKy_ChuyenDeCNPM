@@ -57,7 +57,7 @@ namespace GiuaKy_AppDatVeXe.Views
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Location = new System.Drawing.Point(213, 48);
+            this.label1.Location = new System.Drawing.Point(207, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(305, 51);
             this.label1.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace GiuaKy_AppDatVeXe.Views
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(53, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 29);
@@ -77,20 +77,20 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(53, 194);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(139, 29);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Thời gian:";
+            this.label4.Text = "Thời Gian:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label5.Location = new System.Drawing.Point(364, 244);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(76, 244);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 29);
             this.label5.TabIndex = 14;
@@ -99,25 +99,25 @@ namespace GiuaKy_AppDatVeXe.Views
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(53, 292);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 29);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Giá vé:";
+            this.label6.Text = "Giá Vé:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label7.Location = new System.Drawing.Point(53, 244);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(330, 227);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 29);
+            this.label7.Size = new System.Drawing.Size(112, 57);
             this.label7.TabIndex = 16;
-            this.label7.Text = "Số xe:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label7.Text = "Số Xe:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbChuyen
             // 
@@ -136,18 +136,18 @@ namespace GiuaKy_AppDatVeXe.Views
             this.lbThoiGian.ForeColor = System.Drawing.Color.ForestGreen;
             this.lbThoiGian.Location = new System.Drawing.Point(245, 194);
             this.lbThoiGian.Name = "lbThoiGian";
-            this.lbThoiGian.Size = new System.Drawing.Size(290, 29);
+            this.lbThoiGian.Size = new System.Drawing.Size(273, 29);
             this.lbThoiGian.TabIndex = 18;
             this.lbThoiGian.Text = "?";
             this.lbThoiGian.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbSoGhe
             // 
-            this.lbSoGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoGhe.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lbSoGhe.Location = new System.Drawing.Point(533, 244);
+            this.lbSoGhe.Font = new System.Drawing.Font("Stencil Std", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoGhe.ForeColor = System.Drawing.Color.Red;
+            this.lbSoGhe.Location = new System.Drawing.Point(245, 234);
             this.lbSoGhe.Name = "lbSoGhe";
-            this.lbSoGhe.Size = new System.Drawing.Size(100, 29);
+            this.lbSoGhe.Size = new System.Drawing.Size(79, 46);
             this.lbSoGhe.TabIndex = 19;
             this.lbSoGhe.Text = "?";
             this.lbSoGhe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,18 +158,18 @@ namespace GiuaKy_AppDatVeXe.Views
             this.lbGiaVe.ForeColor = System.Drawing.Color.ForestGreen;
             this.lbGiaVe.Location = new System.Drawing.Point(245, 292);
             this.lbGiaVe.Name = "lbGiaVe";
-            this.lbGiaVe.Size = new System.Drawing.Size(290, 29);
+            this.lbGiaVe.Size = new System.Drawing.Size(273, 29);
             this.lbGiaVe.TabIndex = 20;
             this.lbGiaVe.Text = "?";
             this.lbGiaVe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbSoXe
             // 
-            this.lbSoXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoXe.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lbSoXe.Location = new System.Drawing.Point(245, 244);
+            this.lbSoXe.Font = new System.Drawing.Font("Stencil Std", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoXe.ForeColor = System.Drawing.Color.Red;
+            this.lbSoXe.Location = new System.Drawing.Point(461, 221);
             this.lbSoXe.Name = "lbSoXe";
-            this.lbSoXe.Size = new System.Drawing.Size(100, 29);
+            this.lbSoXe.Size = new System.Drawing.Size(194, 69);
             this.lbSoXe.TabIndex = 21;
             this.lbSoXe.Text = "?";
             this.lbSoXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
