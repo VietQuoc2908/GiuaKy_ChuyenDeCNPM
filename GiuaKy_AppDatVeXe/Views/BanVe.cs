@@ -114,8 +114,8 @@ namespace GiuaKy_AppDatVeXe.Views
         //Hien thi thong tin ve
         private void hienThiThongTinVe()
         {
-            string chuyen = cbDiemDi.Text + '-' + cbDiemDen.Text;
-            string thoigian = dtpNgayDi.Text + ' ' + cbGioDi.Text;
+            string chuyen = cbDiemDi.Text + " - " + cbDiemDen.Text;
+            string thoigian = dtpNgayDi.Text + " " + cbGioDi.Text;
             int count = 0;
             string ghe = "";
             string diemDi = cbDiemDi.GetItemText(cbDiemDi.SelectedItem);
@@ -260,6 +260,11 @@ namespace GiuaKy_AppDatVeXe.Views
                 if (res == DialogResult.OK)
                 {
                     InvoiceVe invoice = new InvoiceVe();
+                    invoice.chuyen = lbChuyen.Text;
+                    invoice.thoiGian = lbThoiGian.Text;
+                    invoice.soGhe = lbSoGhe.Text;
+                    invoice.giaVe = lbGiaVe.Text;
+                    invoice.soXe = dsLichTrinh.BienSo;
                     invoice.ShowDialog();
                     clearThongTin();
                     lbSoLuong.Text = "";

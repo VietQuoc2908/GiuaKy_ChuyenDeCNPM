@@ -79,5 +79,13 @@ namespace GiuaKy_AppDatVeXe.Models
             db.Ves.Add(ve);
             return db.SaveChanges();
         }
+
+        public LichTrinh getLichTrinhByMaLT(int maLT)
+        {
+            var lichTrinh = db.LichTrinhs.Where(lt => lt.MaLT == maLT).FirstOrDefault<LichTrinh>();
+            if (lichTrinh == null)
+                return null;
+            return lichTrinh;
+        }
     }
 }

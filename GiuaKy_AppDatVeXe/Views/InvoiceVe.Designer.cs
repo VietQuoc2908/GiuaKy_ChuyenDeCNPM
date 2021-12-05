@@ -36,18 +36,18 @@ namespace GiuaKy_AppDatVeXe.Views
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbChuyen = new System.Windows.Forms.Label();
+            this.lbThoiGian = new System.Windows.Forms.Label();
+            this.lbSoGhe = new System.Windows.Forms.Label();
+            this.lbGiaVe = new System.Windows.Forms.Label();
+            this.lbSoXe = new System.Windows.Forms.Label();
             this.pnInVe = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pboxLogo = new System.Windows.Forms.PictureBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.btnInVe = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
             this.pnInVe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).BeginInit();
             this.SuspendLayout();
@@ -119,60 +119,60 @@ namespace GiuaKy_AppDatVeXe.Views
             this.label7.Text = "Số xe:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label11
+            // lbChuyen
             // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label11.Location = new System.Drawing.Point(245, 144);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(290, 29);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "?";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbChuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChuyen.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lbChuyen.Location = new System.Drawing.Point(245, 144);
+            this.lbChuyen.Name = "lbChuyen";
+            this.lbChuyen.Size = new System.Drawing.Size(290, 29);
+            this.lbChuyen.TabIndex = 17;
+            this.lbChuyen.Text = "?";
+            this.lbChuyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label10
+            // lbThoiGian
             // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label10.Location = new System.Drawing.Point(245, 194);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(290, 29);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "?";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThoiGian.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lbThoiGian.Location = new System.Drawing.Point(245, 194);
+            this.lbThoiGian.Name = "lbThoiGian";
+            this.lbThoiGian.Size = new System.Drawing.Size(290, 29);
+            this.lbThoiGian.TabIndex = 18;
+            this.lbThoiGian.Text = "?";
+            this.lbThoiGian.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // lbSoGhe
             // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label9.Location = new System.Drawing.Point(533, 244);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 29);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "?";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbSoGhe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoGhe.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lbSoGhe.Location = new System.Drawing.Point(533, 244);
+            this.lbSoGhe.Name = "lbSoGhe";
+            this.lbSoGhe.Size = new System.Drawing.Size(100, 29);
+            this.lbSoGhe.TabIndex = 19;
+            this.lbSoGhe.Text = "?";
+            this.lbSoGhe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lbGiaVe
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label8.Location = new System.Drawing.Point(245, 292);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(290, 29);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "?";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbGiaVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGiaVe.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lbGiaVe.Location = new System.Drawing.Point(245, 292);
+            this.lbGiaVe.Name = "lbGiaVe";
+            this.lbGiaVe.Size = new System.Drawing.Size(290, 29);
+            this.lbGiaVe.TabIndex = 20;
+            this.lbGiaVe.Text = "?";
+            this.lbGiaVe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // lbSoXe
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label3.Location = new System.Drawing.Point(245, 244);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 29);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "?";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbSoXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoXe.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lbSoXe.Location = new System.Drawing.Point(245, 244);
+            this.lbSoXe.Name = "lbSoXe";
+            this.lbSoXe.Size = new System.Drawing.Size(100, 29);
+            this.lbSoXe.TabIndex = 21;
+            this.lbSoXe.Text = "?";
+            this.lbSoXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnInVe
             // 
@@ -180,11 +180,11 @@ namespace GiuaKy_AppDatVeXe.Views
             this.pnInVe.Controls.Add(this.label13);
             this.pnInVe.Controls.Add(this.label12);
             this.pnInVe.Controls.Add(this.pboxLogo);
-            this.pnInVe.Controls.Add(this.label3);
-            this.pnInVe.Controls.Add(this.label8);
-            this.pnInVe.Controls.Add(this.label9);
-            this.pnInVe.Controls.Add(this.label10);
-            this.pnInVe.Controls.Add(this.label11);
+            this.pnInVe.Controls.Add(this.lbSoXe);
+            this.pnInVe.Controls.Add(this.lbGiaVe);
+            this.pnInVe.Controls.Add(this.lbSoGhe);
+            this.pnInVe.Controls.Add(this.lbThoiGian);
+            this.pnInVe.Controls.Add(this.lbChuyen);
             this.pnInVe.Controls.Add(this.label7);
             this.pnInVe.Controls.Add(this.label6);
             this.pnInVe.Controls.Add(this.label5);
@@ -197,6 +197,15 @@ namespace GiuaKy_AppDatVeXe.Views
             this.pnInVe.Name = "pnInVe";
             this.pnInVe.Size = new System.Drawing.Size(700, 401);
             this.pnInVe.TabIndex = 13;
+            // 
+            // label13
+            // 
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label13.Location = new System.Drawing.Point(216, 96);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(302, 3);
+            this.label13.TabIndex = 24;
             // 
             // label12
             // 
@@ -245,15 +254,6 @@ namespace GiuaKy_AppDatVeXe.Views
             this.btnInVe.UseVisualStyleBackColor = false;
             this.btnInVe.Click += new System.EventHandler(this.btnInVe_Click);
             // 
-            // label13
-            // 
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label13.Location = new System.Drawing.Point(216, 96);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(302, 3);
-            this.label13.TabIndex = 24;
-            // 
             // InvoiceVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -280,11 +280,11 @@ namespace GiuaKy_AppDatVeXe.Views
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbChuyen;
+        private System.Windows.Forms.Label lbThoiGian;
+        private System.Windows.Forms.Label lbSoGhe;
+        private System.Windows.Forms.Label lbGiaVe;
+        private System.Windows.Forms.Label lbSoXe;
         private System.Windows.Forms.Panel pnInVe;
         private System.Windows.Forms.Button btnInVe;
         private System.Drawing.Printing.PrintDocument printDocument1;

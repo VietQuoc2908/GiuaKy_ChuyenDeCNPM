@@ -76,6 +76,7 @@
     </Compile>
     <Compile Include="Models\DoanhThuDAO.cs" />
     <Compile Include="Models\InVeDAO.cs" />
+    <Compile Include="Models\InvoiceVeDAO.cs" />
     <Compile Include="Models\KhachHang.cs">
       <DependentUpon>DatVeXeKhachModel.tt</DependentUpon>
     </Compile>

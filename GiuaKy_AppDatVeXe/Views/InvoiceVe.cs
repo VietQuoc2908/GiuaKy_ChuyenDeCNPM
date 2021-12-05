@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GiuaKy_AppDatVeXe.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +14,15 @@ namespace GiuaKy_AppDatVeXe.Views
 {
     public partial class InvoiceVe : Form
     {
+        InvoiceVeDAO invoiceVeDAO;
+        BanVeDAO banVeDAO;
+        public string chuyen, thoiGian, soXe, soGhe, giaVe;
         
         public InvoiceVe()
         {
             InitializeComponent();
+            invoiceVeDAO = new InvoiceVeDAO();
+            banVeDAO = new BanVeDAO();
         }
         private void Print(Panel panel)
         {
@@ -54,7 +60,11 @@ namespace GiuaKy_AppDatVeXe.Views
 
         private void InvoiceVe_Load(object sender, EventArgs e)
         {
-            //Lấy giá trị của vé
+            lbChuyen.Text = chuyen;
+            lbThoiGian.Text = thoiGian;
+            lbSoXe.Text = soXe;
+            lbSoGhe.Text = soGhe;
+            lbGiaVe.Text = giaVe;
         }
     }
 }

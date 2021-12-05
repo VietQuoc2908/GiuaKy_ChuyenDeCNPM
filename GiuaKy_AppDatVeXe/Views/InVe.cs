@@ -152,7 +152,13 @@ namespace GiuaKy_AppDatVeXe.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
+            LichTrinh lichTrinh = inVeDAO.getLichTrinhByMaLT(maLichTrinh);
             InvoiceVe invoice = new InvoiceVe();
+            invoice.chuyen = lichTrinh.DiemDi + " - " + lichTrinh.DiemDen;
+            invoice.thoiGian = lichTrinh.NgayDi.ToString() + " " + lichTrinh.GioDi;
+            invoice.soXe = lichTrinh.BienSo;
+            invoice.soGhe = maGhe;
+            invoice.giaVe = string.Format("{0:0,0} VNĐ", lichTrinh.GiaTien);
             invoice.ShowDialog();
         }
     }

@@ -182,5 +182,11 @@ namespace GiuaKy_AppDatVeXe.Models
             }
             return true;
         }
+
+        public LichTrinh getLichTrinhByMaLT(int maLT)
+        {
+            var query = db.LichTrinhs.FirstOrDefault(lt => lt.MaLT == maLT);
+            return query;
+        }
     }
 }
