@@ -54,3 +54,22 @@ CREATE TABLE Ve
 )
 GO
 
+--Chen du lieu
+INSERT INTO KhachHang VALUES ( '0123451234', 'Vien Hoang Long', 'Soc Trang'),
+( '0987654321', 'Pham Quoc Viet', 'Bac Lieu'),
+( '0123459876', 'Nguyen Tien Dung', 'Ha Tinh')
+GO
+INSERT INTO Xe VALUES 
+( '83K-30303', 'ST-SG', 30,1),
+( '83K-10101', 'ST-DT', 30,1),
+( '59K-10102', 'SG-ST', 30,1),
+( '59K-10103', 'SG-BL', 30,1),
+( '59K-10104', 'SG-HT', 30,1)
+GO
+INSERT INTO LichTrinh VALUES 
+( '83K-30303', '7:00', '12-12-2020', 'Soc Trang','Sai Gon', 180000, 1),
+( '83K-10101', '12:00', '12-12-2020', 'Soc Trang','Dong Thap',160000,1),
+( '59K-10102', '7:00', '12-12-2020', 'Sai Gon','Soc Trang', 180000,1),
+( '59K-10103', '9:00', '12-12-2020', 'Sai Gon','Bac Lieu',200000,1),
+( '59K-10104', '12:00', '12-12-2020', 'Sai Gon','Ha Tinh',300000,1)
+GO
